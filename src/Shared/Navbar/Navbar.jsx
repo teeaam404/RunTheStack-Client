@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Container from "../../Shared/Container/Container";
+import Theme from "../../component/Theme/Theme";
 
 
 const Navbar = () => {
@@ -53,7 +54,7 @@ const Navbar = () => {
             id=""
           />
           <button>
-            {/* Theme here */}
+            <Theme />
           </button>
           <button className="btn btn-ghost btn-circle">
             <div className="indicator">
