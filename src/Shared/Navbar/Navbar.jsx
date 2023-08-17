@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Container from "../../Shared/Container/Container";
+import Theme from "../../component/Theme/Theme";
 
 
 const Navbar = () => {
@@ -32,7 +33,7 @@ const Navbar = () => {
                 <a>Homepage</a>
               </li>
               <li>
-                <a>Portfolio</a>
+                <Link to='/courses'>Courses</Link>
               </li>
               <li>
                 <Link>Question</Link>
@@ -53,7 +54,7 @@ const Navbar = () => {
             id=""
           />
           <button>
-            {/* Theme here */}
+            <Theme />
           </button>
           <button className="btn btn-ghost btn-circle">
             <div className="indicator">
