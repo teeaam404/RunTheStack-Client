@@ -38,6 +38,9 @@ const Navbar = () => {
               <li>
                 <Link to='/qna'>Question</Link>
               </li>
+              <li>
+                <Link to="/community">Community</Link>
+              </li>
             </ul>
           </div>
         </div>
