@@ -1,9 +1,10 @@
-import React from 'react';
-import Faq from '../../component/QnaSection/FAQ/Faq';
+import About from '../../component/About/About';
+import Faq from '../../component/FAQ/Faq';
 
 const Home = () => {
   return (
     <div>
+      <About />
       <Faq />
     </div>
   );
