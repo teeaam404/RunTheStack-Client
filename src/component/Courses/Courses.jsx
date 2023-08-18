@@ -14,7 +14,7 @@ const Courses = () => {
   };
 
   useEffect(() => {
-    fetch("courses.json")
+    fetch("https://run-the-stack-server-delta.vercel.app/courses")
       .then((res) => res.json())
       .then((data) => setCourses(data));
   }, []);
