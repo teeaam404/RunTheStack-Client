@@ -3,6 +3,7 @@ import Main from "../Layouts/Main";
 import Home from "../Pages/Home/Home";
 import Courses from "../component/Courses/Courses";
 import Community from "../Pages/Community/Community";
+import QnaSection from "../component/QnaSection/QnaSection";
 
 export const router = createBrowserRouter([
   {
@@ -18,9 +19,12 @@ export const router = createBrowserRouter([
         element: <Courses />,
       },
       {
-        path: "/community",
+  path: "/community",
         element: <Community></Community>
       }
+        path: "/qna",
+        element: <QnaSection />,
+      },
     ],
   },
 ]);
