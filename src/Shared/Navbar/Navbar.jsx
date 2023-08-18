@@ -1,8 +1,12 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
 import Container from "../../Shared/Container/Container";
+import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 
 const Navbar = () => {
+
+  const {user} = useContext(AuthContext);
   return (
     <Container>
       <div className="navbar bg-base-100">
@@ -74,6 +78,12 @@ const Navbar = () => {
               <span className="badge badge-xs badge-primary indicator-item"></span>
             </div>
           </button>
+          <Link to="/login">
+          {
+            user? <button>Logout</button>: <button>Login</button>
+          }
+          </Link>
+          
         </div>
       </div>
     </Container>
