@@ -78,11 +78,11 @@ const Navbar = () => {
               <span className="badge badge-xs badge-primary indicator-item"></span>
             </div>
           </button>
-          <Link to="/login">
+          <div className="primary-bg px-2 py-1 rounded-md">
           {
-            user? <button>Logout</button>: <button>Login</button>
+            user? <button>Logout</button>: <Link to="/login"><button>Login</button></Link>
           }
-          </Link>
+         </div>
           
         </div>
       </div>
