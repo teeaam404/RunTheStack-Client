@@ -67,7 +67,7 @@ const Question = () => {
              </div>
             </div>
             <div className="">
-              <button className="bg-black text-white font-bold hover:bg-pink-500 px-5 py-1 rounded">Vote</button>
+              <button className="bg-black text-white font-bold hover:bg-pink-500 px-5 py-1 rounded">Answer</button>
             </div>
           </div>
         </div>
