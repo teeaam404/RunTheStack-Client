@@ -1,9 +1,14 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
 import Container from "../../Shared/Container/Container";
+import { AuthContext } from "../../AuthProvider/AuthProvider";
 import Theme from "../../component/Theme/Theme";
 
 
+
 const Navbar = () => {
+
+  const {user, logout} = useContext(AuthContext);
   return (
     <Container>
       <div className="navbar bg-base-100">
@@ -36,7 +41,10 @@ const Navbar = () => {
                 <Link to='/courses'>Courses</Link>
               </li>
               <li>
-                <Link>Question</Link>
+                <Link to='/qna'>Question</Link>
+              </li>
+              <li>
+                <Link to="/community">Community</Link>
               </li>
             </ul>
           </div>
@@ -75,6 +83,12 @@ const Navbar = () => {
               <span className="badge badge-xs badge-primary indicator-item"></span>
             </div>
           </button>
+          <div className="primary-bg px-2 py-1 rounded-md">
+          {
+            user? <button onClick={logout}>Logout</button>: <Link to="/login"><button>Login</button></Link>
+          }
+         </div>
+          
         </div>
       </div>
     </Container>
