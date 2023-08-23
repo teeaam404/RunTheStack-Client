@@ -6,7 +6,7 @@ import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 const Navbar = () => {
 
-  const {user} = useContext(AuthContext);
+  const {user, logout} = useContext(AuthContext);
   return (
     <Container>
       <div className="navbar bg-base-100">
@@ -80,7 +80,7 @@ const Navbar = () => {
           </button>
           <div className="primary-bg px-2 py-1 rounded-md">
           {
-            user? <button>Logout</button>: <Link to="/login"><button>Login</button></Link>
+            user? <button onClick={logout}>Logout</button>: <Link to="/login"><button>Login</button></Link>
           }
          </div>
           
