@@ -22,7 +22,7 @@ const Tools = () => {
     <div>
       <Container>
         <div className="bg-gray-800 py-5 pt-8">
-          <div className="lg:flex gap-3 text-center px-10">
+          <div className="lg:flex gap-3 text-center lg:px-10">
             <div className="text-white border border-slate-600 p-5 rounded-lg w-full"><h2>A Forrester Consulting study shows <span className="font-bold text-2xl text-blue-600">191% return on investment</span> with Stack Overflow for Teams.</h2></div>
 
             <div className="text-white border border-slate-600 p-5 rounded-lg w-full"><h2>The world’s largest telecom firm <span className="font-bold text-2xl text-blue-600">saved $10M</span> in deflected support cases with our centralized knowledge base.</h2></div>
@@ -36,7 +36,7 @@ const Tools = () => {
           <div className="text-white text-center lg:mx-72 mt-5">
             <h2 className="text-5xl font-bold mb-5">Integrates with and improves other tools</h2>
             <p className="text-gray-400">All plans come with integrations for Can <span className="text-blue-500">Slack & Microsoft Teams</span> in order to cut down on pings, limit distractions and make the tools even more powerful. Business and Enterprise customers get access to Trello, GitHub & Okta integrations.</p>
-            <div className="flex gap-4 lg:mx-36 mt-5">
+            <div className="lg:flex gap-4 lg:mx-36 mt-5 sm:bg ">
              <div className="bg-slate-100 p-4 rounded-lg text-indigo-500">
               <BsSlack size={40}/>
              </div>
@@ -57,12 +57,12 @@ const Tools = () => {
               Some of the premium features available with paid tiers
             </h2>
           </div>
-          <div className="lg:flex gap-4 mx-32">
+          <div className="lg:flex gap-4 lg:mx-32">
           <div
               data-aos="zoom-out-up"
               data-aos-easing="ease-out-cubic"
               data-aos-duration="4000"
-              className="max-w-sm p-6 w-full bg-gray-200 border-2 border-b-violet-400 border-x-0 border-t-0 border-violet-400 hover:-translate-y-2 hover:transition hover:delay-100 hover:duration-1000 rounded-lg shadow dark:bg-violet-400 dark:border-gray-800 text-center  dark:hover:bg-slate-300 dark:hover:text-slate-900"
+              className=" p-6 w-full bg-gray-200 border-2 border-b-violet-400 border-x-0 border-t-0 border-violet-400 hover:-translate-y-2 hover:transition hover:delay-100 hover:duration-1000 rounded-lg shadow dark:bg-violet-400 dark:border-gray-800 text-center  dark:hover:bg-slate-300 dark:hover:text-slate-900"
             >
               <MdOutlineKey className="text-indigo-500 mx-auto mb-3" size={40} />
              <h2>Robust read and write API</h2>
@@ -72,7 +72,7 @@ const Tools = () => {
               data-aos="zoom-out-up"
               data-aos-easing="ease-out-cubic"
               data-aos-duration="150000"
-              className="max-w-sm p-6 w-full bg-gray-200 border-2 border-b-violet-400 border-x-0 border-t-0 border-violet-400 hover:-translate-y-2 hover:transition hover:delay-100 hover:duration-1000 rounded-lg shadow dark:bg-violet-400 dark:border-gray-800 text-center  dark:hover:bg-slate-300 dark:hover:text-slate-900"
+              className="p-6 w-full bg-gray-200 border-2 border-b-violet-400 border-x-0 border-t-0 border-violet-400 hover:-translate-y-2 hover:transition hover:delay-100 hover:duration-1000 rounded-lg shadow dark:bg-violet-400 dark:border-gray-800 text-center  dark:hover:bg-slate-300 dark:hover:text-slate-900"
             >
               <AiOutlineLock className="text-indigo-500 mx-auto mb-3" size={40} />
              <h2>
@@ -83,7 +83,7 @@ const Tools = () => {
               data-aos="zoom-out-up"
               data-aos-easing="ease-out-cubic"
               data-aos-duration="2000"
-              className="max-w-sm p-6 w-full bg-gray-200 border-2 border-b-violet-400 border-x-0 border-t-0 border-violet-400 hover:-translate-y-2 hover:transition hover:delay-100 hover:duration-1000 rounded-lg shadow dark:bg-violet-400 dark:border-gray-800 text-center dark:hover:bg-slate-300 dark:hover:text-slate-900"
+              className="p-6 w-full bg-gray-200 border-2 border-b-violet-400 border-x-0 border-t-0 border-violet-400 hover:-translate-y-2 hover:transition hover:delay-100 hover:duration-1000 rounded-lg shadow dark:bg-violet-400 dark:border-gray-800 text-center dark:hover:bg-slate-300 dark:hover:text-slate-900"
             >
               <HiUserGroup className="text-indigo-500 mx-auto mb-3" size={40} />
              <h2>
@@ -95,7 +95,7 @@ const Tools = () => {
               data-aos="zoom-out-up"
               data-aos-easing="ease-out-cubic"
               data-aos-duration="100000"
-              className="max-w-sm p-6 w-full bg-gray-200 border-2 border-b-violet-400 border-x-0 border-t-0 border-violet-400 hover:-translate-y-2 hover:transition hover:delay-100 hover:duration-1000 rounded-lg shadow dark:bg-violet-400 dark:border-gray-800 text-center dark:hover:bg-slate-300 dark:hover:text-slate-900"
+              className="p-6 w-full bg-gray-200 border-2 border-b-violet-400 border-x-0 border-t-0 border-violet-400 hover:-translate-y-2 hover:transition hover:delay-100 hover:duration-1000 rounded-lg shadow dark:bg-violet-400 dark:border-gray-800 text-center dark:hover:bg-slate-300 dark:hover:text-slate-900"
             >
               <PiHeadsetBold className="text-indigo-500 mx-auto mb-3" size={40} />
              <h2>
