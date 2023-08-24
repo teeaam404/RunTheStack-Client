@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { Rating } from "@smastrom/react-rating";
-import "@smastrom/react-rating/style.css";
+// import { Rating } from "@smastrom/react-rating";
+// import "@smastrom/react-rating/style.css";
 import { Link } from "react-router-dom";
 // import CourseDetails from "../../component/CourseDetails/CourseDetails";
 
@@ -42,11 +42,11 @@ const Courses = () => {
               <h3>Duration: {course.duration}</h3>
               <h1>Instructor Name: {course.instructor_name}</h1>
               <div>
-                <Rating
+                {/* <Rating
                   style={{ maxWidth: 120 }}
                   value={course.rating}
                   readOnly
-                ></Rating>
+                ></Rating> */}
               </div>
               <div className="card-actions justify-end">
                 <Link onClick={handleDetails} className="btn btn-primary">Details</Link>
