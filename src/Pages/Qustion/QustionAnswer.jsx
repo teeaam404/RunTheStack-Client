@@ -6,6 +6,8 @@ import { FcLike } from 'react-icons/fc';
 import { GiEternalLove } from 'react-icons/gi';
 import { BsReplyFill } from 'react-icons/bs';
 import { PiShareBold } from 'react-icons/pi';
+import Container from '../../Shared/Container/Container';
+
 const QuestionAnswer = () => {
   const { id } = useParams();
   const [answers, setAnswers] = useState([]);
@@ -21,6 +23,7 @@ const QuestionAnswer = () => {
   const questionAnswer = answers.find(answer => answer.id === parseInt(id));
 
   return (
+    <Container>
     <div>
       {questionAnswer && (
         
@@ -83,6 +86,7 @@ const QuestionAnswer = () => {
      
       )}
     </div>
+    </Container>
   );
 };
 

@@ -43,9 +43,9 @@ const Navbar = () => {
           </div>
         </div>
         <div className="navbar-center">
-          <a className="btn btn-ghost normal-case text-xl font-bold">
+          <Link to='/'><a className="btn btn-ghost normal-case text-xl font-bold">
             Run<span className="text-red-600">TheStack</span>
-          </a>
+          </a></Link>
         </div>
         <div className="navbar-end">
           <input

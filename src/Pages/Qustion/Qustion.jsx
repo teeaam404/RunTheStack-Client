@@ -6,6 +6,7 @@ import { CgSmileMouthOpen } from "react-icons/cg";
 import { FaEye } from "react-icons/fa";
 import { TiMessages } from "react-icons/ti";
 import { RiLayoutColumnFill } from "react-icons/ri";
+import Container from '../../Shared/Container/Container';
 
 const Qustion = () => {
   const [questions, setQuestions] = useState([]);
@@ -20,7 +21,7 @@ const Qustion = () => {
   }, []);
 
   return (
-    
+    <Container>
     <div>
       {questions.map((question) => (
         <div key={question.id}>
@@ -111,6 +112,7 @@ const Qustion = () => {
         </div>
       ))}
     </div>
+    </Container>
   );
 };
 
