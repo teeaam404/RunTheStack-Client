@@ -1,15 +1,18 @@
+import Banner from "../../component/Banner/Banner"
+import Carousel from "../../component/Carousel/Carousel"
+import TourTeams from "../../component/TourTeams/TourTeams"
+import Tools from "../../component/Tools/Tools"
 
-import About from '../../component/About/About';
-import Faq from '../../component/FAQ/Faq';
 
 const Home = () => {
   return (
     <div>
-      <About />
-      <Faq />
+      <Banner />
+      <Carousel />
+      <TourTeams />
+      <Tools />
     </div>
   );
 };
 
 export default Home;
-
