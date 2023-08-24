@@ -1,0 +1,169 @@
+[
+  {
+    "id": 1,
+    "title": "How to create a responsive layout using HTML and CSS?",
+    "body": "I want to build a responsive website layout...",
+    "tags": ["html", "css", "bootstrap", "tailwindcss"],
+    "user": {
+      "id": 101,
+      "username": "qustionvai",
+      "useremail": "saf@gmail.com",
+      "userimage": "ad.jpg"
+    },
+    "date": "2023-08-19T10:30:00Z",
+    "answers": [
+      {
+        "comments": "To create a responsive layout, you can use media queries...",
+        "user": {
+          "id": 102,
+          "username": "answerExpert",
+          "useremail": "abc@gmail.com",
+          "userimage": "abc.jpg"
+        },
+        "date": "2023-08-19T11:15:00Z",
+        "votes": 12
+      },
+      {
+        "comments": "asgasgag...",
+        "user": {
+          "id": 102,
+          "username": "answerExpert",
+          "useremail": "abc@gmail.com",
+          "userimage": "abc.jpg"
+        },
+        "date": "2023-08-19T11:15:00Z",
+        "votes": 12
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "How to connect to a MongoDB database using Python?",
+    "body": "I'm new to MongoDB and I need help with connecting...",
+    "tags": ["mongodb", "python"],
+    "user": {
+      "id": 201,
+      "username": "mongoLearner",
+      "useremail": "mongo@example.com",
+      "userimage": "mongo.jpg"
+    },
+    "date": "2023-08-18T09:45:00Z",
+    "answers": [
+      {
+        "comments": "You can use the 'pymongo' library to connect to MongoDB...",
+        "user": {
+          "id": 202,
+          "username": "mongoGuru",
+          "useremail": "mongoGuru@example.com",
+          "userimage": "mongoGuru.jpg"
+        },
+        "date": "2023-08-18T10:20:00Z",
+        "votes": 6
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "How do I make an element float right in CSS?",
+    "body": "I'm trying to float an element to the right...",
+    "tags": ["css", "html"],
+    "user": {
+      "id": 301,
+      "username": "cssEnthusiast",
+      "useremail": "cssfan@mail.com",
+      "userimage": "css.jpg"
+    },
+    "date": "2023-08-17T14:20:00Z",
+    "answers": [
+      {
+        "comments": "You can use the 'float: right;' property in CSS...",
+        "user": {
+          "id": 302,
+          "username": "cssWizard",
+          "useremail": "cssWizard@example.com",
+          "userimage": "cssWizard.jpg"
+        },
+        "date": "2023-08-17T15:10:00Z",
+        "votes": 9
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "What are the advantages of using Tailwind CSS?",
+    "body": "I'm curious about the benefits of using Tailwind CSS...",
+    "tags": ["css", "tailwindcss"],
+    "user": {
+      "id": 401,
+      "username": "tailwindExplorer",
+      "useremail": "tailwind@example.com",
+      "userimage": "tailwind.jpg"
+    },
+    "date": "2023-08-16T11:05:00Z",
+    "answers": [
+      {
+        "comments": "Tailwind CSS offers utility classes that speed up development...",
+        "user": {
+          "id": 402,
+          "username": "cssPro",
+          "useremail": "cssPro@example.com",
+          "userimage": "cssPro.jpg"
+        },
+        "date": "2023-08-16T12:00:00Z",
+        "votes": 7
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "How to loop through an array in JavaScript?",
+    "body": "I need to iterate through an array and perform actions...",
+    "tags": ["javascript"],
+    "user": {
+      "id": 501,
+      "username": "jsCoder",
+      "useremail": "js@example.com",
+      "userimage": "js.jpg"
+    },
+    "date": "2023-08-15T08:30:00Z",
+    "answers": [
+      {
+        "comments": "You can use 'for' loops or 'forEach' to iterate through arrays...",
+        "user": {
+          "id": 502,
+          "username": "jsMaster",
+          "useremail": "jsMaster@example.com",
+          "userimage": "jsMaster.jpg"
+        },
+        "date": "2023-08-15T09:20:00Z",
+        "votes": 11
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "How to style text with CSS?",
+    "body": "I want to change the font and color of my text...",
+    "tags": ["css", "html"],
+    "user": {
+      "id": 601,
+      "username": "stylishDev",
+      "useremail": "stylish@example.com",
+      "userimage": "stylish.jpg"
+    },
+    "date": "2023-08-14T13:15:00Z",
+    "answers": [
+      {
+        "comments": "You can use properties like 'font-family' and 'color' in CSS...",
+        "user": {
+          "id": 602,
+          "username": "cssStylist",
+          "useremail": "cssStylist@example.com",
+          "userimage": "cssStylist.jpg"
+        },
+        "date": "2023-08-14T14:00:00Z",
+        "votes": 8
+      }
+    ]
+  }
+]
