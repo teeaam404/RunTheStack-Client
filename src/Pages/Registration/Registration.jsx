@@ -51,7 +51,7 @@ const Registration = () => {
                             <label className="label font-bold">
                                 <span className="text-2xl secondary-text">Name</span>
                             </label>
-                            <input type="text" name='name' placeholder="Type Your Name" className="input shadow-inner shadow-slate-300" />
+                            <input type="text" name='name' placeholder="Type Your Name" required className="input shadow-inner shadow-slate-300" />
                         </div>
                         <div className="form-control w-[96%] mx-auto">
                             <label className="label font-bold">

@@ -58,14 +58,14 @@ const Login = () => {
                                 <label className="label">
                                     <span className="label-text secondary-text">What is your gmail?</span>
                                 </label>
-                                <input type="email" placeholder="Type here" 
+                                <input required type="email" placeholder="Type here" 
                                 name='email' className="input shadow-inner shadow-slate-300  w-full" />
                             </div>
                             <div className="form-control w-[100%]">
                                 <label className="label">
                                     <span className="label-text secondary-text">What is your password?</span>
                                 </label>
-                                <input type="password" placeholder="Type here" 
+                                <input required type="password" placeholder="Type here" 
                                 name='password' className="input shadow-inner shadow-slate-300  w-full" />
                             </div>
                             <button type='submit' className='btn btn-full primary-bg secondary-text w-full font-bold text-xl bg-slate-300 text-blue-400 shadow-inner my-4'>Login</button>
