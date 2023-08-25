@@ -1,17 +1,15 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
-import Container from "../../Shared/Container/Container";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import Theme from "../../component/Theme/Theme";
-
-
+import logo  from "../../../public/logo/logo 1.png";
 
 const Navbar = () => {
 
   const {user, logout} = useContext(AuthContext);
   return (
-    <Container>
-      <div className="navbar bg-base-100">
+   
+      <div className="navbar common-bg">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost btn-circle">
@@ -35,31 +33,38 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <a>Homepage</a>
+               <Link to='/'>Home</Link>
               </li>
               <li>
                 <Link to='/courses'>Courses</Link>
               </li>
               <li>
-                <Link to='/qna'>Question</Link>
+                <Link to='/qna'>Ask Question</Link>
+              </li>
+              <li>
+                <Link to='/questions'>Question</Link>
               </li>
               <li>
                 <Link to="/community">Community</Link>
+              </li>
+              <li>
+                <Link to="/about">About</Link>
               </li>
             </ul>
           </div>
         </div>
         <div className="navbar-center">
-          <a className="btn btn-ghost normal-case text-xl font-bold">
-            Run<span className="text-red-600">TheStack</span>
-          </a>
+         <Link to="/">
+         <img src={logo} className="w-32" alt="" />
+         </Link>
         </div>
         <div className="navbar-end">
           <input
-            className="input input-bordered input-primary md:w-full sm:w-10 max-w-xs mx-5"
+            className="input input-bordered input-primary md:w-full hidden md:block  max-w-xs mx-5"
             type="email"
             name=""
             id=""
+            placeholder="Search your question"
           />
           <button>
             <Theme />
@@ -91,7 +96,7 @@ const Navbar = () => {
           
         </div>
       </div>
-    </Container>
+   
   );
 };
 

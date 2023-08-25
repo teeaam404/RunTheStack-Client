@@ -7,6 +7,9 @@ import Community from "../Pages/Community/Community";
 import QnaSection from "../component/QnaSection/QnaSection";
 import Login from '../Pages/Login/Login';
 import Registration from '../Pages/Registration/Registration';
+import About from "../component/About/About";
+import Question from "../Pages/Question/Question";
+import QuestionAnswer from "../Pages/Question/QuestionAnswer";
 
 export const router = createBrowserRouter([
     {
@@ -34,8 +37,21 @@ export const router = createBrowserRouter([
                 element: <Login />
             },
             {
-                path: "Registration",
+                path: "registration",
                 element: <Registration></Registration>
+            },
+            {
+                path: "about",
+                element: <About></About>
+            },
+            {
+                path: 'questions',
+                element: <Question></Question>
+            },
+            {
+              path:'/questionAnswer/:id',
+              element: <QuestionAnswer />
+              
             }
         ],
     },
