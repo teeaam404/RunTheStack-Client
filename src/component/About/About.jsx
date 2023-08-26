@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FaFacebookF, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 import { AiOutlinePhone } from "react-icons/ai";
+import saiful from "../../../public/img/saiful.jpg";
 
 const About = () => {
     const [lead, setLead] = useState("saiful")

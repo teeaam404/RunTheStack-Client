@@ -3,7 +3,7 @@ import logo from "../../../public/logo/logo 1.png"
 
 const Footer = () => {
   return (
-    <div id="animation">
+    <div id="animation" className="">
       <footer className="footer p-10 text-white">
         <div>
        
