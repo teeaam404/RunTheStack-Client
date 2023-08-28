@@ -10,6 +10,9 @@ import Registration from '../Pages/Registration/Registration';
 import About from "../component/About/About";
 import Question from "../Pages/Question/Question";
 import QuestionAnswer from "../Pages/Question/QuestionAnswer";
+import Dashboard from "../Layouts/Dashboard";
+import UserProfile from "../Dashboard/UserProfile/UserProfile";
+import AdminProfile from "../Dashboard/AdminProfile/AdminProfile";
 
 export const router = createBrowserRouter([
     {
@@ -51,10 +54,23 @@ export const router = createBrowserRouter([
             {
               path:'/questionAnswer/:id',
               element: <QuestionAnswer />
-              
             }
         ],
     },
+    {
+        path: "dashboard",
+        element: <Dashboard></Dashboard>,
+        children:[
+            {
+                path: "profile",
+                element: <UserProfile></UserProfile>
+            },
+            {
+                path:"admin",
+                element: <AdminProfile></AdminProfile>
+            }
+        ],
+    }
 ]);
 
 
