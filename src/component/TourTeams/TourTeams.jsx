@@ -1,7 +1,7 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import Container from "../../Shared/Container/Container";
+// import Container from "../../Shared/Container/Container";
 import img from "../../assets/img/website-logo.png"
 import { FaCheckCircle, FaUsers, FaProjectDiagram } from 'react-icons/fa';
 import { GoRocket } from 'react-icons/go';
@@ -28,16 +28,15 @@ const TourTeams = () => {
   
   return (
     <>
-       <Container>
-          <div className="bg-gray-900 p-10">
+          <div className="secondary-bg p-10">
             <div>
             <div className=" text-center">
-             <img className="mx-auto" src={img} alt="" />
-             <h2 className="text-2xl text-orange-500 text-center font-bold">FOR TEAMS</h2>
+             <img className="mx-auto md:w-[25%] my-8" src={img} alt="" />
+             <h2 className="text-2xl primary-text text-center font-bold">FOR TEAMS</h2>
               <h2 className="text-3xl font-bold font-serif mt-7 lg:mx-48 text-white text-center">Capture your company’s knowledge and context in a <br />discoverable format to <span className="text-orange-500">unblock your team</span></h2>
               <button className="btn bg-blue-600 border-0 hover:bg-blue-700 mt-6 text-white p-3 px-8 rounded-lg">Take of tour of Teams</button>
             </div>
-            <div className="lg:flex gap-5 text-center my-10">
+            <div className="lg:flex gap-5 text-center my-10 justify-center">
             <div
               data-aos="zoom-out-up"
               data-aos-easing="ease-out-cubic"
@@ -84,7 +83,7 @@ const TourTeams = () => {
               <p className="text-center mt-3 mb-8 text-gray-400">Here are just a few types of technologists that we help.</p>
             </div>
 
-      <div className="lg:flex gap-3">
+      <div className="lg:flex gap-3 justify-center">
         <div onClick={() => handleSectionClick('devops')} className={`section ${activeSection === 'devops' ? 'active' : 'inactive'}`}>
           <div className="icon">
           <GoRocket className="mx-auto" size={80} />
@@ -127,7 +126,6 @@ const TourTeams = () => {
     </div>       
 
           </div>
-       </Container>
     </>
   );
 };

@@ -1,6 +1,6 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Container from "../../Shared/Container/Container";
+// import Container from "../../Shared/Container/Container";
 import { BsSlack, BsMicrosoftTeams, BsGithub, BsTrello } from 'react-icons/bs';
 import { SiOkta } from 'react-icons/si';
 import { MdOutlineKey } from 'react-icons/md';
@@ -20,9 +20,9 @@ const Tools = () => {
   }, []);
   return (
     <div>
-      <Container>
-        <div className="bg-gray-800 py-5 pt-8">
-          <div className="lg:flex gap-3 text-center lg:px-10">
+      
+        <div className="secondary-bg py-5 pt-8">
+          <div className="lg:flex gap-3 justify-center text-center lg:px-10">
             <div className="text-white border border-slate-600 p-5 rounded-lg w-full"><h2>A Forrester Consulting study shows <span className="font-bold text-2xl text-blue-600">191% return on investment</span> with Stack Overflow for Teams.</h2></div>
 
             <div className="text-white border border-slate-600 p-5 rounded-lg w-full"><h2>The world’s largest telecom firm <span className="font-bold text-2xl text-blue-600">saved $10M</span> in deflected support cases with our centralized knowledge base.</h2></div>
@@ -36,7 +36,7 @@ const Tools = () => {
           <div className="text-white text-center lg:mx-72 mt-5">
             <h2 className="text-5xl font-bold mb-5">Integrates with and improves other tools</h2>
             <p className="text-gray-400">All plans come with integrations for Can <span className="text-blue-500">Slack & Microsoft Teams</span> in order to cut down on pings, limit distractions and make the tools even more powerful. Business and Enterprise customers get access to Trello, GitHub & Okta integrations.</p>
-            <div className="lg:flex gap-4 lg:mx-36 mt-5 sm:bg ">
+            <div className="grid grid-cols-2 gap-5 md:grid-cols-5 px-2 justify-center items-center mt-5">
              <div className="bg-slate-100 p-4 rounded-lg text-indigo-500">
               <BsSlack size={40}/>
              </div>
@@ -104,7 +104,7 @@ const Tools = () => {
             </div>
           </div>
         </div>
-      </Container>
+     
     </div>
   );
 };

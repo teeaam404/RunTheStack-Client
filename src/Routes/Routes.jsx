@@ -7,6 +7,12 @@ import Community from "../Pages/Community/Community";
 import QnaSection from "../component/QnaSection/QnaSection";
 import Login from '../Pages/Login/Login';
 import Registration from '../Pages/Registration/Registration';
+import About from "../component/About/About";
+import Question from "../Pages/Question/Question";
+import QuestionAnswer from "../Pages/Question/QuestionAnswer";
+import Dashboard from "../Layouts/Dashboard";
+import UserProfile from "../Dashboard/UserProfile/UserProfile";
+import AdminProfile from "../Dashboard/AdminProfile/AdminProfile";
 
 export const router = createBrowserRouter([
     {
@@ -34,11 +40,37 @@ export const router = createBrowserRouter([
                 element: <Login />
             },
             {
-                path: "Registration",
+                path: "registration",
                 element: <Registration></Registration>
+            },
+            {
+                path: "about",
+                element: <About></About>
+            },
+            {
+                path: 'questions',
+                element: <Question></Question>
+            },
+            {
+              path:'/questionAnswer/:id',
+              element: <QuestionAnswer />
             }
         ],
     },
+    {
+        path: "dashboard",
+        element: <Dashboard></Dashboard>,
+        children:[
+            {
+                path: "profile",
+                element: <UserProfile></UserProfile>
+            },
+            {
+                path:"admin",
+                element: <AdminProfile></AdminProfile>
+            }
+        ],
+    }
 ]);
 
 
