@@ -1,6 +1,6 @@
+import { Rating } from "@smastrom/react-rating";
 import { useEffect, useState } from "react";
-// import { Rating } from "@smastrom/react-rating";
-// import "@smastrom/react-rating/style.css";
+import "@smastrom/react-rating/style.css";
 import { Link } from "react-router-dom";
 // import CourseDetails from "../../component/CourseDetails/CourseDetails";
 
@@ -13,8 +13,10 @@ const Courses = () => {
     setShowAll(true);
   };
 
+  // https://run-the-stack-server-delta.vercel.app
+
   useEffect(() => {
-    fetch("https://run-the-stack-server-delta.vercel.app/courses")
+    fetch("http://localhost:5000/courses")
       .then((res) => res.json())
       .then((data) => setCourses(data));
   }, []);
@@ -35,18 +37,19 @@ const Courses = () => {
         {courses.slice(0, showAll ? 18 : 9).map((course) => (
           <div key={course.id} className="card w-96 glass">
             <figure>
-              <img className="w-full h-52" src={course.image} alt="car!" />
+              <img className="w-full h-52" src={course.image} alt="image" />
             </figure>
             <div className="card-body">
               <h2 className="card-title">{course.course_name}</h2>
               <h3>Duration: {course.duration}</h3>
               <h1>Instructor Name: {course.instructor_name}</h1>
               <div>
-                {/* <Rating
-                  style={{ maxWidth: 120 }}
+                <Rating
+                  style={{ maxWidth: 110 }}
+                  className=""
                   value={course.rating}
                   readOnly
-                ></Rating> */}
+                ></Rating>
               </div>
               <div className="card-actions justify-end">
                 <Link onClick={handleDetails} className="btn btn-primary">Details</Link>

@@ -10,6 +10,7 @@ import Registration from '../Pages/Registration/Registration';
 import About from "../component/About/About";
 import Question from "../Pages/Question/Question";
 import QuestionAnswer from "../Pages/Question/QuestionAnswer";
+import Payment from "../Dashboard/Payment/Payment";
 
 export const router = createBrowserRouter([
     {
@@ -52,6 +53,10 @@ export const router = createBrowserRouter([
               path:'/questionAnswer/:id',
               element: <QuestionAnswer />
               
+            },
+            {
+                path: '/payment',
+                element: <Payment />
             }
         ],
     },
