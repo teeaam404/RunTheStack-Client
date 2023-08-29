@@ -2,12 +2,10 @@ import { Rating } from "@smastrom/react-rating";
 import { useEffect, useState } from "react";
 import "@smastrom/react-rating/style.css";
 import { Link } from "react-router-dom";
-// import CourseDetails from "../../component/CourseDetails/CourseDetails";
 
 const Courses = () => {
   const [courses, setCourses] = useState([]);
   const [showAll, setShowAll] = useState(false);
-//   const [uniqueId, setUniqueId] = useState(null);
 
   const handleShowAll = () => {
     setShowAll(true);
@@ -16,20 +14,14 @@ const Courses = () => {
   // https://run-the-stack-server-delta.vercel.app
 
   useEffect(() => {
-    fetch("http://localhost:5000/courses")
+    fetch("../../../public/courses.json")
       .then((res) => res.json())
       .then((data) => setCourses(data));
   }, []);
 
   const handleDetails = (props) => {
     console.log(props);
-  //   const {id, instructor_name } = courses;
-  //   console.log(id);
-  //   // courses.map(course => <CourseDetails
-  //   // key={course.id}
-  //   // course={course}
-  //   // />)
-  }
+  };
 
   return (
     <div>
@@ -52,7 +44,12 @@ const Courses = () => {
                 ></Rating>
               </div>
               <div className="card-actions justify-end">
-                <Link onClick={handleDetails} className="btn btn-primary">Details</Link>
+                <Link
+                  to={`/courseDetails/${course.id}`}
+                  className="btn btn-primary"
+                >
+                  Details
+                </Link>
               </div>
             </div>
           </div>

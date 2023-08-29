@@ -39,7 +39,7 @@ const CheckoutForm = () => {
             style: {
               base: {
                 fontSize: "16px",
-                color: "#424770",
+                color: "#aab7c4",
                 "::placeholder": {
                   color: "#aab7c4",
                 },
@@ -58,9 +58,7 @@ const CheckoutForm = () => {
           Pay
         </button>
       </form>
-      {
-              cardError && <p className="text-red-700 ml-10 font-bold">{cardError}</p>
-      }
+      {cardError && <p className="text-red-700 ml-10 font-bold">{cardError}</p>}
     </>
   );
 };

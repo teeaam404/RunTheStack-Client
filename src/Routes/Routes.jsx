@@ -10,7 +10,11 @@ import Registration from '../Pages/Registration/Registration';
 import About from "../component/About/About";
 import Question from "../Pages/Question/Question";
 import QuestionAnswer from "../Pages/Question/QuestionAnswer";
-import Payment from "../Dashboard/Payment/Payment";
+import Payment from "../component/Payment/Payment";
+import Dashboard from "../Layouts/Dashboard";
+import AdminProfile from "../Dashboard/AdminProfile/AdminProfile";
+import UserProfile from "../Dashboard/UserProfile/UserProfile";
+import CourseDetails from "../component/CourseDetails/CourseDetails";
 
 export const router = createBrowserRouter([
     {
@@ -52,14 +56,31 @@ export const router = createBrowserRouter([
             {
               path:'/questionAnswer/:id',
               element: <QuestionAnswer />
-              
             },
             {
                 path: '/payment',
                 element: <Payment />
+            },
+            {
+                path: 'courseDetails/:id',
+                element: <CourseDetails />
             }
         ],
     },
+    {
+        path: "dashboard",
+        element: <Dashboard></Dashboard>,
+        children:[
+            {
+                path: "profile",
+                element: <UserProfile></UserProfile>
+            },
+            {
+                path:"admin",
+                element: <AdminProfile></AdminProfile>
+            }
+        ],
+    }
 ]);
 
 
