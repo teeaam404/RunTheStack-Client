@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { AiTwotoneLike } from "react-icons/ai";
 import { BiLike } from "react-icons/bi";
@@ -6,13 +6,16 @@ import { CgSmileMouthOpen } from "react-icons/cg";
 import { FaEye } from "react-icons/fa";
 import { TiMessages } from "react-icons/ti";
 import { RiLayoutColumnFill } from "react-icons/ri";
-import Container from "../../Shared/Container/Container";
+// import Container from "../../Shared/Container/Container";
+import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 const Question = () => {
   const [questions, setQuestions] = useState([]);
+  const { user } = useContext(AuthContext);
+  // console.log(user);
 
   useEffect(() => {
-    fetch("questionData.json")
+    fetch("http://localhost:5000/question")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
@@ -30,7 +33,7 @@ const Question = () => {
                 <div>
                   <img
                     className="rounded-full"
-                    src={question.user.userimage}
+                    src={question.userImage}
                     alt="man"
                     width={30}
                     height={30}
@@ -41,7 +44,7 @@ const Question = () => {
                     className="text-pink-500 font-bold hover:text-slate-600"
                     href=""
                   >
-                    {question.user.username}
+                    {question.username}
                   </a>
                 </div>
                 <div>
@@ -65,17 +68,7 @@ const Question = () => {
                 </a>
               </Link>
               <p className="mt-3 mb-3">{question.body}</p>
-              <div className="flex gap-3 mb-5">
-                {question.tags.map((tag) => (
-                  <a
-                    key={tag}
-                    className="bg-slate-200 hover:border-black hover:border-2 px-2 rounded"
-                    href=""
-                  >
-                    {tag}
-                  </a>
-                ))}
-              </div>
+              <div className="flex gap-3 mb-5">{question.tags}</div>
               <hr />
               <div className="lg:flex justify-between items-center gap-3 mt-5">
                 <div className="flex gap-3">

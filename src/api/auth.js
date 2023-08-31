@@ -2,6 +2,8 @@
 export const saveUser = user => {
     const currentUser = {
         email: user.email,
+        userImage: user.photoURL,
+        userName: user.displayName,
     }
 
     fetch(`http://localhost:5000/users/${user?.email}`, {
