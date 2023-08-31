@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useRef, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import Container from "../../Shared/Container/Container";
 import loginimg from "../../../public/Login/login.gif";
@@ -6,44 +6,69 @@ import { FaGithub } from "react-icons/fa";
 import { AiFillGoogleCircle } from "react-icons/ai";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import { toast } from "react-hot-toast";
+import { saveUser } from "../../api/auth";
 
 const Login = () => {
-  const { login, googleLogin } = useContext(AuthContext);
-  const [error, setError] = useState("");
+  const { loading, setLoading, signIn, signInWithGoogle, resetPassword } =
+    useContext(AuthContext);
 
   const navigate = useNavigate();
   const location = useLocation();
-  // console.log('login page location', location)
   const from = location.state?.from?.pathname || "/";
+  const emailRef = useRef();
 
-  const handleLogin = (event) => {
+  //handleSubmit
+  const handleSubmit = (event) => {
     event.preventDefault();
-    const form = event.target;
-    const email = form.email.value;
-    const password = form.password.value;
+    const email = event.target.email.value;
+    const password = event.target.password.value;
 
-    console.log(email, password);
     if (password.length < 6) {
       toast.error("please set at least 6 characters ");
     }
-    login(email, password)
-      .then((result) => {
-        const loggedUser = result.user;
-        console.log(loggedUser);
 
+    signIn(email, password)
+      .then((result) => {
+        console.log(result.user);
         navigate(from, { replace: true });
         toast.success("Successfully Login");
-        return setError("");
       })
-      .catch((error) => {
-        // console.log(error.message)
-        setError("Wrong email and password");
+      .catch((err) => {
+        console.log(err.message);
+        toast.error(err.message);
+        setLoading(false);
       });
   };
-  const handleGoogleLogin = () => {
-    googleLogin();
-    toast.success("Successfully Google Login");
-    navigate(from, { replace: true });
+
+  //google signIn
+  const handleGoogleSignIn = () => {
+    signInWithGoogle()
+      .then((result) => {
+        console.log(result.user);
+        saveUser(result.user);
+        toast.success("Successfully Google Login");
+        navigate(from, { replace: true });
+      })
+      .catch((err) => {
+        console.log(err.message);
+        toast.error(err.message);
+        setLoading(false);
+      });
+  };
+
+  //handle reset password
+  const handleReset = () => {
+    const email = emailRef.current.value;
+    resetPassword(email)
+      .then(() => {
+        toast.success("Please Check Your Email For Reset Link !!");
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.log(err.message);
+        toast.error(err.message);
+        setLoading(false);
+      });
   };
 
   return (
@@ -53,7 +78,7 @@ const Login = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 justify-between items-center gap-10 my-5">
           <div>
             <form
-              onSubmit={handleLogin}
+              onSubmit={handleSubmit}
               className="shadow-inner px-4 rounded-md"
             >
               <div className="form-control w-[100%]">
@@ -101,7 +126,7 @@ const Login = () => {
               <div className="flex flex-col lg:flex-row">
                 <div className="grid flex-grow  card bg-base-300 rounded-box place-items-center cursor-pointer">
                   <div
-                    onClick={handleGoogleLogin}
+                    onClick={handleGoogleSignIn}
                     className="flex justify-center items-center gap-5"
                   >
                     <AiFillGoogleCircle className="w-8 h-12"></AiFillGoogleCircle>{" "}
