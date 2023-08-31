@@ -88,7 +88,7 @@ const Navbar = () => {
           id=""
           placeholder="Search your question"
         />
-        {/* <button>
+        <button>
           <Theme />
         </button>
         <button className="btn btn-ghost btn-circle">
@@ -109,7 +109,7 @@ const Navbar = () => {
             </svg>
             <span className="badge badge-xs badge-primary indicator-item"></span>
           </div>
-        </button> */}
+        </button>
         <Link to='/dashboard/profile' className="avatar me-3">
           <div className="w-14 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
             <img src="https://i.ibb.co/nfQ8FVR/In-Shot-20220611-235517574.jpg" alt="Profile" />

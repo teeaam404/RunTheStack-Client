@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react';
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Toaster, toast } from 'react-hot-toast';
 import { AuthContext } from '../../AuthProvider/AuthProvider';
+import { saveUser } from '../../api/auth';
 
 
 const Registration = () => {
@@ -34,13 +35,12 @@ const Registration = () => {
                 console.log(createdUser);
                 navigate(from, { replace: true })
                 event.target.reset();
-                return toast.success("Registration Successful")
+                saveUser(result.user)
+                toast.success("Registration Successful")
             })
             .catch(error => {
                 console.log(error)
                 setError(toast.error('Already Register this email'))
-
-
             })
     }
     return (

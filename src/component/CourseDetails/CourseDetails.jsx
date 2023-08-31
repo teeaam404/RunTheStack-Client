@@ -1,14 +1,67 @@
-import React from 'react';
-import { useParams } from 'react-router-dom';
+import React, { useEffect, useState } from "react";
+import { Link, useParams } from "react-router-dom";
+import { Rating } from "@smastrom/react-rating";
 
 const CourseDetails = () => {
-    const { id } = useParams();
-    console.log(id);
-    return (
-        <div>
-            
+  const { id } = useParams();
+  const [details, setDetails] = useState(null);
+
+  useEffect(() => {
+    fetch(`/courses.json`)
+      .then((res) => res.json())
+      .then((data) => {
+        const course = data.find((course) => course.id == id);
+        if (course) {
+          setDetails(course);
+        } else {
+          console.error(`Course with id ${id} not found`);
+        }
+      })
+      .catch((error) => console.error(error));
+  }, [id]);
+
+  return (
+    <div>
+      {details && (
+        <div className="hero min-h-screen bg-base-200 p-5">
+          <div className="hero-content flex-col lg:flex-row-reverse">
+            <img
+              src={details.image}
+              className="max-w-sm rounded-lg shadow-2xl"
+            />
+            <div>
+              <h1 className="text-3xl font-bold">{details.course_name}</h1>
+              <p className="text-xl font-bold">
+                Instructor Name: {details.instructor_name}
+              </p>
+              <p>Duration: {details.duration}</p>
+              <div className="text-xl font-bold">
+                <p>
+                  Price:{" "}
+                  <span className="text-red-400 line-through">
+                    ${details.price}{" "}
+                  </span>
+                  ${details.discount}
+                </p>
+              </div>
+              <div className="my-5">
+                <Rating
+                  style={{ maxWidth: 110 }}
+                  className=""
+                  value={details.rating}
+                  readOnly
+                ></Rating>
+              </div>
+              <p className="py-6">{details.description}</p>
+              <Link to="/payment" className="btn btn-outline btn-secondary">
+                Pay
+              </Link>
+            </div>
+          </div>
         </div>
-    );
+      )}
+    </div>
+  );
 };
 
 export default CourseDetails;

@@ -15,6 +15,7 @@ import Dashboard from "../Layouts/Dashboard";
 import AdminProfile from "../Dashboard/AdminProfile/AdminProfile";
 import UserProfile from "../Dashboard/UserProfile/UserProfile";
 import CourseDetails from "../component/CourseDetails/CourseDetails";
+import Theme from "../component/Theme/Theme";
 
 export const router = createBrowserRouter([
     {
@@ -28,6 +29,10 @@ export const router = createBrowserRouter([
             {
                 path: "/courses",
                 element: <Courses />,
+            },
+            {
+                path: "/theme",
+                element: <Theme />,
             },
             {
                 path: "/community",

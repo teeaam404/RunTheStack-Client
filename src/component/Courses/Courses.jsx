@@ -14,15 +14,11 @@ const Courses = () => {
   // https://run-the-stack-server-delta.vercel.app
 
   useEffect(() => {
-    fetch("../../../public/courses.json")
+    fetch("/courses.json")
       .then((res) => res.json())
       .then((data) => setCourses(data));
   }, []);
-
-  const handleDetails = (props) => {
-    console.log(props);
-  };
-
+  
   return (
     <div>
       <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-5 mx-5 gap-10">
