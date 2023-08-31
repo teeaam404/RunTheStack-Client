@@ -4,6 +4,7 @@ import Courses from "../component/Courses/Courses";
 import Qustion from "../Pages/Qustion/Qustion";
 import QuestionAnswer from "../Pages/Qustion/QustionAnswer";
 import Home from "../Pages/Home/Home";
+import QnaSection from "../component/QnaSection/QnaSection";
 
 export const router = createBrowserRouter([
   {
@@ -25,6 +26,11 @@ export const router = createBrowserRouter([
       {
         path:'/qustionAnswer/:id',
         element: <QuestionAnswer />
+        
+      },
+      {
+        path:'/qna',
+        element: <QnaSection/>
         
       },
     ],
