@@ -3,12 +3,11 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import Theme from "../../component/Theme/Theme";
 import logo from "../../../public/logo/logo 1.png";
+import profile from "../../assets/placeholder.jpg";
 
 const Navbar = () => {
-
-  const { user, logout } = useContext(AuthContext);
+  const { user, logOut } = useContext(AuthContext);
   return (
-
     <div className="navbar common-bg">
       <div className="navbar-start lg:hidden">
         <div className="dropdown">
@@ -33,16 +32,16 @@ const Navbar = () => {
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <Link to='/'>Home</Link>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to='/courses'>Courses</Link>
+              <Link to="/courses">Courses</Link>
             </li>
             <li>
-              <Link to='/qna'>Ask Question</Link>
+              <Link to="/qna">Ask Question</Link>
             </li>
             <li>
-              <Link to='/questions'>Question</Link>
+              <Link to="/questions">Question</Link>
             </li>
             <li>
               <Link to="/community">Community</Link>
@@ -54,18 +53,18 @@ const Navbar = () => {
         </div>
       </div>
       <div className="navbar-start hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
+        <ul className="menu text-white menu-horizontal px-1">
           <li>
-            <Link to='/'>Home</Link>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to='/courses'>Courses</Link>
+            <Link to="/courses">Courses</Link>
           </li>
           <li>
-            <Link to='/qna'>Ask Question</Link>
+            <Link to="/qna">Ask Question</Link>
           </li>
           <li>
-            <Link to='/questions'>Question</Link>
+            <Link to="/questions">Question</Link>
           </li>
           <li>
             <Link to="/community">Community</Link>
@@ -88,7 +87,7 @@ const Navbar = () => {
           id=""
           placeholder="Search your question"
         />
-        {/* <button>
+        <button>
           <Theme />
         </button>
         <button className="btn btn-ghost btn-circle">
@@ -109,21 +108,27 @@ const Navbar = () => {
             </svg>
             <span className="badge badge-xs badge-primary indicator-item"></span>
           </div>
-        </button> */}
-        <Link to='/dashboard/profile' className="avatar me-3">
-          <div className="w-14 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-            <img src="https://i.ibb.co/nfQ8FVR/In-Shot-20220611-235517574.jpg" alt="Profile" />
+        </button>
+        <Link to="/dashboard/profile" className="avatar me-3">
+          <div className="w-8 rounded-full ring-inherit ring ring-offset-base-100 ring-offset-2">
+            {user ? (
+              <img src={user.photoURL} alt="Profile" />
+            ) : (
+              <img src={profile} alt="Profile" />
+            )}
           </div>
         </Link>
         <div className="primary-bg px-2 py-1 rounded-md">
-          {
-            user ? <button onClick={logout}>Logout</button> : <Link to="/login"><button>Login</button></Link>
-          }
+          {user ? (
+            <Link onClick={logOut}>Logout</Link>
+          ) : (
+            <Link to="/login">
+              <button>Login</button>
+            </Link>
+          )}
         </div>
-
       </div>
     </div>
-
   );
 };
 
