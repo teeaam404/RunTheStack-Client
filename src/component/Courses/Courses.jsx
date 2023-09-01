@@ -14,7 +14,7 @@ const Courses = () => {
   // https://run-the-stack-server-delta.vercel.app
 
   useEffect(() => {
-    fetch("/courses.json")
+    fetch("https://run-the-stack-server-delta.vercel.app/courses")
       .then((res) => res.json())
       .then((data) => setCourses(data));
   }, []);
@@ -41,7 +41,7 @@ const Courses = () => {
               </div>
               <div className="card-actions justify-end">
                 <Link
-                  to={`/courseDetails/${course.id}`}
+                  to={`/courseDetails/${course._id}`}
                   className="btn btn-primary"
                 >
                   Details

@@ -1,6 +1,7 @@
 import { CardElement, useElements, useStripe } from "@stripe/react-stripe-js";
 import React, { useState } from "react";
 
+
 const CheckoutForm = () => {
   const stripe = useStripe();
   const elements = useElements();
@@ -39,7 +40,7 @@ const CheckoutForm = () => {
             style: {
               base: {
                 fontSize: "16px",
-                color: "#aab7c4",
+                color: "#424770",
                 "::placeholder": {
                   color: "#aab7c4",
                 },

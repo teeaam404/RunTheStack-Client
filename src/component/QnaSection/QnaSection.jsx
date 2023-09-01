@@ -18,7 +18,7 @@ const QnaSection = () => {
       date: data.date,
     };
     console.log(data); // You can replace this with your desired form submission logic
-    fetch("http://localhost:5000/question", {
+    fetch("https://run-the-stack-server-delta.vercel.app/question", {
       method: "POST",
       headers: {
         "content-type": "application/json",
