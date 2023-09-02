@@ -13,6 +13,7 @@ import QuestionAnswer from "../Pages/Question/QuestionAnswer";
 import Dashboard from "../Layouts/Dashboard";
 import UserProfile from "../Dashboard/UserProfile/UserProfile";
 import AdminProfile from "../Dashboard/AdminProfile/AdminProfile";
+import JoinGroup from "../Pages/Community/joinGroup/joinGroup";
 
 export const router = createBrowserRouter([
     {
@@ -30,6 +31,10 @@ export const router = createBrowserRouter([
             {
                 path: "/community",
                 element: <Community></Community>
+            },
+            {
+                path: "/community/group/:id",
+                element: <JoinGroup></JoinGroup>
             },
             {
                 path: "/qna",
