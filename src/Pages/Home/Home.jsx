@@ -4,6 +4,7 @@ import TourTeams from "../../component/TourTeams/TourTeams"
 import Tools from "../../component/Tools/Tools"
 import About from "../../component/About/About";
 import CoreValue from "../../component/CoreValue/CoreValue";
+import Feedback from "../../component/Feedback/Feedback";
 
 
 const Home = () => {
@@ -14,8 +15,8 @@ const Home = () => {
       <TourTeams />
       <Tools />
       <Carousel />
-      
       <About></About>
+      <Feedback />
     </div>
   );
 };
