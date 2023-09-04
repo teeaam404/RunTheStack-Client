@@ -1,5 +1,4 @@
 [{
-        "id": 482930157648239,
         "course_name": "Introduction to Computer Science",
         "instructor_name": "John Smith",
         "image": "https://0901.static.prezi.com/preview/v2/vkdxcde33osvpsk5kzepvgxhp76jc3sachvcdoaizecfr3dnitcq_3_0.png",
@@ -10,7 +9,6 @@
         "price": 99
   },
     {
-        "id": 739284615902847,
         "course_name": "Data Structures and Algorithms",
         "instructor_name": "Jane Doe",
         "image": "https://appsbd.com/wp-content/uploads/2021/09/data-structures-and-algorithms.jpg",
@@ -21,7 +19,6 @@
         "price": 69.99
     },
     {
-        "id": 126598374820356,
         "course_name": "Web Development Bootcamp",
         "instructor_name": "Mike Johnson",
         "image": "https://www.filepicker.io/api/file/FSIjaoI2QtKWZL65cogd",
@@ -34,7 +31,6 @@
     {
 
 
-        "id": 573821046985632,
 
         "course_name": "Machine Learning Fundamentals",
         "instructor_name": "Emily Williams",
@@ -46,7 +42,6 @@
         "price": 79.99
     },
     {
-        "id": 920573168472039,
         "course_name": "Cybersecurity Essentials",
         "instructor_name": "David Brown",
         "image": "https://i.ytimg.com/vi/vInCm7Xz0sI/maxresdefault.jpg",
@@ -57,7 +52,6 @@
         "price": 59.99
     },
     {
-        "id": 385720196438217,
 
         "course_name": "Problem Solving Bootcamp",
         "instructor_name": "David Warner",
@@ -69,7 +63,6 @@
         "price": 21.99
     },
     {
-        "id": 652847109385726,
         "course_name": "React Basic to Advance",
         "instructor_name": "Stark Michel",
         "image": "https://courses.wscubetech.com/s/store/courses/60179b3f0cf2ab0d7162b210/cover.jpg?v=1",
@@ -81,7 +74,6 @@
     },
     {
 
-        "id": 291034586723154,
         "course_name": "Software Engineering Principles",
         "instructor_name": "Alex Turner",
         "image": "https://www.interviewbit.com/blog/wp-content/uploads/2022/02/Software-Engineering-Principles-1024x573.png",
@@ -92,7 +84,6 @@
         "price": 59.99
     },
     {
-        "id": 837465920134857,
         "course_name": "Mobile App Development with React Native",
         "instructor_name": "Chris Anderson",
         "image": "https://www.freecodecamp.org/news/content/images/2023/04/reactnative.png",
@@ -103,7 +94,6 @@
         "price": 79.99
     },
     {
-        "id": 154893672059318,
         "course_name": "Artificial Intelligence and Ethics",
         "instructor_name": "Sophia Martinez",
         "image": "https://www.kuppingercole.com/pics/2018_ai_banner_1000x563px.png",
@@ -114,7 +104,6 @@
         "price": 49.99
     },
     {
-        "id": 726530184975362,
         "course_name": "Cloud Computing Fundamentals",
         "instructor_name": "Michael Clark",
         "image": "https://eadn-wc03-4064062.nxedge.io/wp-content/uploads/2021/08/CloudFormation_BlogImage-1.png",
@@ -126,7 +115,6 @@
     },
     {
 
-        "id": 195763042874516,
         "course_name": "Blockchain Development Masterclass",
         "instructor_name": "Elena Petrov",
         "image": "https://101blockchains.com/wp-content/uploads/2022/03/blockchain-like-a-boss.png",
@@ -137,7 +125,6 @@
         "price": 99.99
     },
     {
-        "id": 630918257436180,
         "course_name": "Quantum Computing Principles",
         "instructor_name": "Alexandre Dupont",
         "image": "https://www.rolandberger.com/content_assets/content_images/captions/Think_Act_Magazine_Purpose_Quantum_leap_GT2_large_image.jpg",
@@ -148,7 +135,6 @@
         "price": 129.9
     },
     {
-        "id": 274569803215109,
         "course_name": "Hacking and Penetration Testing",
         "instructor_name": "Ryan Thompson",
         "image": "https://www.xenonstack.com/hubfs/ethical-hacking-vs-penetration-testing.png",
@@ -159,7 +145,6 @@
         "price": 79.99
     },
     {
-        "id": 936457218406932,
         "course_name": "Digital Image Processing with MATLAB",
         "instructor_name": "Linda Nguyen",
         "image": "https://matlabsimulation.com/wp-content/uploads/2020/11/Digital-Image-Processing-Projects-Using-matlab.png",
@@ -170,7 +155,6 @@
         "price": 89.99
     },
     {
-        "id": 521349867067895,
         "course_name": "Robotics and Automation Engineering",
         "instructor_name": "Martin Andersson",
         "image": "https://www.e-spincorp.com/wp-content/uploads/2020/08/robotics-automation-1024x72dpi.jpg",
@@ -181,7 +165,6 @@
         "price": 109.9
     },
     {
-        "id": 865024193758246,
         "course_name": "Game Engine Architecture",
         "instructor_name": "Samuel Turner",
         "image": "https://www.researchgate.net/publication/323179176/figure/fig2/AS:594109840510976@1518658232445/Detailed-game-engine-architecture.png",
@@ -192,7 +175,6 @@
         "price": 79.99
     },
     {
-        "id": 293841650572831,
         "course_name": "Neuromorphic Computing Fundamentals",
         "instructor_name": "Sophie Baker",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJSPAfKXzJhKthHOC1NbSoW9S_ajOiJvr8Cw&usqp=CAU",

@@ -7,6 +7,7 @@ const CourseDetails = () => {
   console.log(_id);
   const [details, setDetails] = useState(null);
 
+
   useEffect(() => {
     fetch(`https://run-the-stack-server-delta.vercel.app/courses`)
       .then((res) => res.json())
@@ -40,21 +41,20 @@ const CourseDetails = () => {
                 <p>
                   Price:{" "}
                   <span className="text-red-400 line-through">
-                    ${details.price}{" "}
-                  </span>
+                    ${details.price}
+                  </span>{' '}
                   ${details.discount}
                 </p>
               </div>
               <div className="my-5">
                 <Rating
                   style={{ maxWidth: 110 }}
-                  className=""
                   value={details.rating}
                   readOnly
                 ></Rating>
               </div>
               <p className="py-6">{details.description}</p>
-              <Link to="/payment" className="btn btn-outline btn-secondary">
+              <Link to={'/payment'} details={details} className="btn btn-outline btn-secondary">
                 Pay
               </Link>
             </div>
