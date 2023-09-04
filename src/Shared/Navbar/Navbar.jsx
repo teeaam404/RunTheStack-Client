@@ -7,6 +7,7 @@ import profile from "../../assets/placeholder.jpg";
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
+  
   return (
     <div className="navbar common-bg">
       <div className="navbar-start lg:hidden">
