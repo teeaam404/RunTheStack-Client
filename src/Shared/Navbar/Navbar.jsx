@@ -112,7 +112,7 @@ const Navbar = () => {
         <Link to="/dashboard/profile" className="avatar me-3">
           <div className="w-8 rounded-full ring-inherit ring ring-offset-base-100 ring-offset-2">
             {user ? (
-              <img src={user.photoURL} alt="Profile" />
+              <img src={user?.photoURL} alt="Profile" />
             ) : (
               <img src={profile} alt="Profile" />
             )}
