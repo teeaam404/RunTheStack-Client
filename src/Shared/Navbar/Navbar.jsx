@@ -7,6 +7,7 @@ import profile from "../../assets/placeholder.jpg";
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
+  
   return (
     <div className="navbar common-bg">
       <div className="navbar-start lg:hidden">
@@ -112,7 +113,7 @@ const Navbar = () => {
         <Link to="/dashboard/profile" className="avatar me-3">
           <div className="w-8 rounded-full ring-inherit ring ring-offset-base-100 ring-offset-2">
             {user ? (
-              <img src={user.photoURL} alt="Profile" />
+              <img src={user?.photoURL} alt="Profile" />
             ) : (
               <img src={profile} alt="Profile" />
             )}
