@@ -9,30 +9,35 @@ import img7 from "../../assets/logo/instracart.png"
 import img8 from "../../assets/logo/intercom.png"
 import img9 from "../../assets/logo/logiteck.png"
 import img10 from "../../assets/logo/mircosoft.png"
-import Container from "../../Shared/Container/Container"
+// import Container from "../../Shared/Container/Container"
 
 const Carousel = () => {
   return (
     <>
-    <div className="lg:mx-44 my-24">
-      <Container>
-        <div className="my-10">
-          <h2 className="text-center text-3xl font-bold text-gray-500">Thousands of organizations around the globe use Stack Overflow for Teams</h2>
+    <div className=" secondary-bg py-10">
+     <div className="common-bg mx-8 md:mx-24 rounded-3xl py-5">
+     <div className="">
+          <h2 className="text-center text-3xl font-semibold secondary-text">Thousands of organizations around the globe use Stack Overflow for Teams</h2>
         </div>
-        <div className="mx-auto my-auto mb-5">
+        <div className=" rounded-lg py-5">
           <Marquee>
-            <img className="w-60" src={img2} alt="" />
-            <img className="w-60" src={img5} alt="" />
-            <img className="w-60" src={img6} alt="" />
-            <img className="w-60" src={img7} alt="" />
-            <img className="w-60" src={img8} alt="" />
-            <img className="w-60" src={img9} alt="" />
-            <img className="w-60" src={img10} alt="" />
-            <img className="w-60" src={img1} alt="" />
-            <img className="w-60" src={img3} alt="" />
+            <div className="flex gap-20 rounded-lg justify-between">
+            <img className="w-60 rounded-lg" src={img2} alt="" />
+            <img className="w-60 rounded-lg" src={img5} alt="" />
+            <img className="w-60 rounded-lg" src={img6} alt="" />
+            <img className="w-60 rounded-lg" src={img7} alt="" />
+            <img className="w-60 rounded-lg" src={img8} alt="" />
+            <img className="w-60 rounded-lg" src={img9} alt="" />
+            <img className="w-60 rounded-lg" src={img10} alt="" />
+            <img className="w-60 rounded-lg" src={img1} alt="" />
+            <img className="w-60 rounded-lg" src={img3} alt="" />
+            </div>
+            
           </Marquee>
         </div>
-      </Container>
+     </div>
+      
+      
     </div>
     </>
   );
