@@ -2,203 +2,243 @@
 [
     {
 [{
-        "id": 482930157648239,
         "course_name": "Introduction to Computer Science",
         "instructor_name": "John Smith",
         "image": "https://0901.static.prezi.com/preview/v2/vkdxcde33osvpsk5kzepvgxhp76jc3sachvcdoaizecfr3dnitcq_3_0.png",
-        "rating": 4.7,
+        "rating": 3.5,
         "duration": "6hr 45min",
+        "discount": 5,
         "description": "Introduction to Computer Science is a foundational course that provides an overview of the fundamental concepts, principles, and practices within the field of computer science. This course typically covers a broad range of topics, including the history of computing, basic programming concepts, algorithms and data structures, problem-solving methodologies, computer hardware and software, and an introduction to various areas such as artificial intelligence, databases, and networking. Students are introduced to programming languages, logical thinking, and computational problem-solving, fostering a solid foundation for further exploration and specialization within the diverse and rapidly evolving field of computer science.",
-        "price": "$49.99"
-    },
+        "price": 99
+  },
     {
-        "id": 739284615902847,
         "course_name": "Data Structures and Algorithms",
         "instructor_name": "Jane Doe",
         "image": "https://appsbd.com/wp-content/uploads/2021/09/data-structures-and-algorithms.jpg",
         "rating": 4.9,
         "duration": "6hr 35min",
+        "discount": 25,        
         "description": "Data Structures and Algorithms are fundamental concepts in computer science that focus on organizing and manipulating data effectively to solve problems efficiently. Data structures are arrangements used to store and manage data, ranging from simple structures like arrays and linked lists to more complex ones like trees, graphs, and hash tables. Algorithms are step-by-step procedures designed to perform specific tasks on these data structures, such as searching, sorting, and optimization. Understanding data structures and algorithms is essential for developing efficient software and solving a wide range of computational challenges across various domains, from software development to artificial intelligence.",
-        "price": "$69.99"
+        "price": 69.99
     },
     {
+<<<<<<< HEAD
 
 
         "id": 126598374820356,
 
+=======
+>>>>>>> a2f5330ff34b0e8d3dbe34176d3501eab02db077
         "course_name": "Web Development Bootcamp",
         "instructor_name": "Mike Johnson",
         "image": "https://www.filepicker.io/api/file/FSIjaoI2QtKWZL65cogd",
         "rating": 4.6,
         "duration": "4hr 50min",
+        "discount": 30,
         "description": "Web development refers to the process of creating, building, and maintaining websites and web applications that are accessible through the internet. It encompasses a wide range of activities, including designing the user interface (UI), developing the underlying code, and ensuring functionality and interactivity. Web development involves various technologies, such as HTML, CSS, JavaScript, and backend languages like Python, PHP, or Node.js. Developers work on both the frontend (visible elements and user experience) and backend (server-side logic and databases) aspects of a website, aiming to create responsive, visually appealing, and user-friendly digital experiences. The field of web development continues to evolve with advancements in technology, resulting in dynamic, feature-rich, and innovative online platforms for businesses, individuals, and organizations.",
-        "price": "$89.99"
+        "price": 89.99
     },
     {
 
 
+<<<<<<< HEAD
         "id": 573821046985632,
+=======
+>>>>>>> a2f5330ff34b0e8d3dbe34176d3501eab02db077
 
         "course_name": "Machine Learning Fundamentals",
         "instructor_name": "Emily Williams",
         "image": "https://i.ytimg.com/vi/hmOiINgO6tA/maxresdefault.jpg",
         "rating": 4.8,
         "duration": "5hr 45min",
+        "discount": 15,
         "description": "Machine learning is a field of artificial intelligence (AI) that focuses on developing algorithms and models that enable computers to learn from and make predictions or decisions based on data. Instead of being explicitly programmed, machines use patterns and statistical techniques to improve their performance over time. This technology finds applications in various domains, such as image and speech recognition, recommendation systems, medical diagnoses, financial predictions, and more. The primary goal of machine learning is to enable computers to adapt and improve their performance as they encounter new data, enhancing their ability to solve complex tasks autonomously.",
-        "price": "$79.99"
+        "price": 79.99
     },
     {
-        "id": 920573168472039,
         "course_name": "Cybersecurity Essentials",
         "instructor_name": "David Brown",
         "image": "https://i.ytimg.com/vi/vInCm7Xz0sI/maxresdefault.jpg",
         "rating": 4.5,
         "duration": "6hr 00min",
+        "discount": 29,
         "description": "Cybersecurity Essentials refers to the fundamental principles, practices, and measures employed to safeguard digital systems, networks, and data from cyber threats and attacks. It encompasses a range of strategies aimed at protecting information technology infrastructure, including computers, servers, mobile devices, and internet-connected systems. Key components of cybersecurity essentials include threat detection, prevention, and response, as well as encryption, authentication, access control, and regular software updates. As the digital landscape continues to evolve, understanding and implementing cybersecurity essentials is crucial for individuals, businesses, and organizations to mitigate risks and ensure the confidentiality, integrity, and availability of their sensitive information and online operations.",
-        "price": "$59.99"
+        "price": 59.99
     },
     {
+<<<<<<< HEAD
         "id": 385720196438217,
+=======
+>>>>>>> a2f5330ff34b0e8d3dbe34176d3501eab02db077
 
         "course_name": "Problem Solving Bootcamp",
         "instructor_name": "David Warner",
         "image": "https://www.aihr.com/wp-content/uploads/problem-analysis-in-hr-cover.png",
         "rating": 4.7,
         "duration": "4hr 35min",
+        "discount": 5,
         "description": "Problem solving is the cognitive process of finding effective solutions to challenging situations or obstacles. It involves identifying, analyzing, and resolving issues in a systematic and logical manner. Successful problem solving often requires critical thinking, creativity, and the ability to evaluate various options before selecting the best course of action. This skill is crucial in various aspects of life, including personal, professional, and academic settings, as it enables individuals to navigate complex problems and make informed decisions. Effective problem solvers are adept at breaking down problems into manageable parts, considering both short-term and long-term implications, and adapting their approaches as needed to achieve desired outcomes.",
-        "price": "$21.99"
+        "price": 21.99
     },
     {
+<<<<<<< HEAD
 
         "id": 652847109385726,
 
+=======
+>>>>>>> a2f5330ff34b0e8d3dbe34176d3501eab02db077
         "course_name": "React Basic to Advance",
         "instructor_name": "Stark Michel",
         "image": "https://courses.wscubetech.com/s/store/courses/60179b3f0cf2ab0d7162b210/cover.jpg?v=1",
         "rating": 4.2,
         "duration": "4hr 40min",
+        "discount": 3,
         "description": "React is a widely used JavaScript library for building user interfaces. Developed by Facebook, React simplifies the process of creating interactive and dynamic web applications. It employs a component-based architecture, allowing developers to break down the UI into reusable components that manage their own state and rendering logic. React utilizes a virtual DOM (Document Object Model) for efficient updates, minimizing the need to manipulate the actual DOM directly. This results in faster and smoother user experiences. React is often combined with other technologies like JSX (a syntax extension) and state management libraries to create powerful and scalable front-end applications.",
-        "price": "$11.99"
+        "price": 11.99
     },
     {
 
+<<<<<<< HEAD
         "id": 291034586723154,
 
+=======
+>>>>>>> a2f5330ff34b0e8d3dbe34176d3501eab02db077
         "course_name": "Software Engineering Principles",
         "instructor_name": "Alex Turner",
         "image": "https://www.interviewbit.com/blog/wp-content/uploads/2022/02/Software-Engineering-Principles-1024x573.png",
         "rating": 4.8,
         "duration": "5hr 25min",
+        "discount": 30,
         "description": "Software Engineering Principles refer to the fundamental guidelines and best practices that govern the process of designing, developing, testing, and maintaining software systems. These principles aim to ensure the creation of high-quality software that is efficient, reliable, maintainable, and meets the needs of users and stakeholders. Key aspects of software engineering principles include requirements analysis, modular design, code reusability, documentation, version control, testing methodologies, and continuous integration. By adhering to these principles, software engineers can enhance the overall development process, minimize errors, and create software that is both functional and sustainable over time.",
-        "price": "$59.99"
+        "price": 59.99
     },
     {
+<<<<<<< HEAD
         "id": 837465920134857,
 
+=======
+>>>>>>> a2f5330ff34b0e8d3dbe34176d3501eab02db077
         "course_name": "Mobile App Development with React Native",
         "instructor_name": "Chris Anderson",
         "image": "https://www.freecodecamp.org/news/content/images/2023/04/reactnative.png",
         "rating": 4.6,
         "duration": "6hr 45min",
+        "discount": 30,
         "description": "Mobile App Development with React Native is a framework that enables developers to create mobile applications for both iOS and Android platforms using a single codebase. React Native, developed by Facebook, leverages the power of the popular React library to build user interfaces with reusable components. This approach streamlines the development process by allowing developers to write code once and deploy it on multiple platforms, saving time and resources. React Native combines native components and JavaScript, providing a balance between performance and code reusability. This topic encompasses learning how to use React Native's tools and libraries to build efficient, visually appealing, and cross-platform mobile apps, making it a favored choice among developers for rapidly delivering high-quality mobile experiences.",
-        "price": "$79.99"
+        "price": 79.99
     },
     {
+<<<<<<< HEAD
 
         "id": 154893672059318,
 
+=======
+>>>>>>> a2f5330ff34b0e8d3dbe34176d3501eab02db077
         "course_name": "Artificial Intelligence and Ethics",
         "instructor_name": "Sophia Martinez",
         "image": "https://www.kuppingercole.com/pics/2018_ai_banner_1000x563px.png",
         "rating": 4.5,
         "duration": "6hr 45min",
+        "discount": 20,
         "description": "Artificial Intelligence and Ethics explores the complex relationship between the advancement of AI technologies and the moral considerations surrounding their development and use. This field delves into questions of responsibility, bias, transparency, and decision-making in AI systems. It seeks to establish guidelines and principles that ensure AI benefits society while avoiding unintended consequences, discrimination, and potential harm. The discussion encompasses topics such as AI's impact on employment, privacy, and social structures, aiming to strike a balance between technological progress and ethical considerations for a more responsible and equitable AI-driven future.",
-        "price": "$49.99"
+        "price": 49.99
     },
     {
+<<<<<<< HEAD
 
         "id": 726530184975362,
 
+=======
+>>>>>>> a2f5330ff34b0e8d3dbe34176d3501eab02db077
         "course_name": "Cloud Computing Fundamentals",
         "instructor_name": "Michael Clark",
         "image": "https://eadn-wc03-4064062.nxedge.io/wp-content/uploads/2021/08/CloudFormation_BlogImage-1.png",
         "rating": 4.9,
         "duration": "4hr 10min",
+        "discount": 40,
         "description": "Cloud computing fundamentals refer to the essential concepts and principles that underlie the delivery of computing resources and services over the internet. In cloud computing, users can access and utilize a variety of resources such as virtual machines, storage, networking, and software applications, without the need to own or manage physical infrastructure. Key aspects of cloud computing include on-demand availability, scalability, flexibility, and pay-as-you-go pricing models. This paradigm enables businesses and individuals to efficiently deploy, manage, and scale their IT resources, leading to cost savings, enhanced agility, and improved collaboration. Cloud computing is categorized into various models, including Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS), each offering different levels of control and management for users. Understanding these fundamentals is crucial for organizations seeking to harness the power of cloud computing to streamline operations and innovate effectively.",
-        "price": "$89.99"
+        "price": 89.99
     },
     {
 
+<<<<<<< HEAD
         "id": 195763042874516,
 
+=======
+>>>>>>> a2f5330ff34b0e8d3dbe34176d3501eab02db077
         "course_name": "Blockchain Development Masterclass",
         "instructor_name": "Elena Petrov",
         "image": "https://101blockchains.com/wp-content/uploads/2022/03/blockchain-like-a-boss.png",
         "rating": 4.8,
         "duration": "4hr 55min",
+        "discount": 50,
         "description": "The Blockchain Development Masterclass is an intensive and comprehensive educational program designed to equip participants with the knowledge and skills necessary to become proficient in blockchain technology and its application. This masterclass covers a wide range of topics, including the fundamentals of blockchain, smart contracts, decentralized applications (DApps), consensus algorithms, security considerations, and hands-on experience with popular blockchain platforms and programming languages. Participants can expect to gain a deep understanding of how blockchain works, its potential use cases across industries, and the ability to develop and deploy their own blockchain-based solutions. Whether for aspiring developers, entrepreneurs, or tech enthusiasts, this masterclass offers a solid foundation to navigate the rapidly evolving field of blockchain technology.",
-        "price": "$99.99"
+        "price": 99.99
     },
     {
-        "id": 630918257436180,
         "course_name": "Quantum Computing Principles",
         "instructor_name": "Alexandre Dupont",
         "image": "https://www.rolandberger.com/content_assets/content_images/captions/Think_Act_Magazine_Purpose_Quantum_leap_GT2_large_image.jpg",
         "rating": 4.7,
         "duration": "3hr 45min",
+        "discount": 80,
         "description": "Quantum Computing Principles explores the fundamental concepts underlying quantum computing, a revolutionary field that leverages the principles of quantum mechanics to process and manipulate information. Unlike classical computers that use bits, quantum computers use quantum bits or qubits, which can exist in multiple states simultaneously due to phenomena like superposition and entanglement. These properties allow quantum computers to perform certain types of computations much faster than classical computers, potentially revolutionizing fields such as cryptography, optimization, and material science. The principles of quantum computing delve into topics like quantum gates, quantum algorithms, and quantum error correction, paving the way for the development of powerful and efficient computing technologies with the potential to solve complex problems currently deemed infeasible for classical computers.",
-        "price": "$129.99"
+        "price": 129.9
     },
     {
-        "id": 274569803215109,
         "course_name": "Hacking and Penetration Testing",
         "instructor_name": "Ryan Thompson",
         "image": "https://www.xenonstack.com/hubfs/ethical-hacking-vs-penetration-testing.png",
         "rating": 4.6,
         "duration": "3hr 55min",
+        "discount": 40,
         "description": "Hacking and Penetration Testing involves the systematic exploration of computer systems, networks, and applications to identify vulnerabilities that could be exploited by malicious actors. Penetration testers, often referred to as ethical hackers, simulate real-world cyberattacks to assess the security posture of a target system. This process includes attempting to breach defenses, uncover weaknesses, and gain unauthorized access to determine potential points of entry for unauthorized individuals. The ultimate goal is to help organizations identify and address security flaws proactively, thereby enhancing their overall cybersecurity and safeguarding sensitive information from potential threats.",
-        "price": "$79.99"
+        "price": 79.99
     },
     {
-        "id": 936457218406932,
         "course_name": "Digital Image Processing with MATLAB",
         "instructor_name": "Linda Nguyen",
         "image": "https://matlabsimulation.com/wp-content/uploads/2020/11/Digital-Image-Processing-Projects-Using-matlab.png",
         "rating": 4.9,
         "duration": "3hr 30min",
+        "discount": 35,
         "description": "Digital Image Processing with MATLAB is a field that involves the manipulation, enhancement, analysis, and interpretation of digital images using the MATLAB software. MATLAB provides a comprehensive environment for performing various image processing tasks, such as image filtering, transformation, restoration, segmentation, and feature extraction. This topic explores how to leverage MATLAB's powerful tools and functions to process and manipulate digital images, allowing for tasks like improving image quality, detecting patterns, and extracting meaningful information from images. It finds applications in diverse areas, including medicine, remote sensing, computer vision, and more, contributing to advancements in image-based research and technology.",
-        "price": "$89.99"
+        "price": 89.99
     },
     {
+<<<<<<< HEAD
 
         "id": 521349867067895,
 
+=======
+>>>>>>> a2f5330ff34b0e8d3dbe34176d3501eab02db077
         "course_name": "Robotics and Automation Engineering",
         "instructor_name": "Martin Andersson",
         "image": "https://www.e-spincorp.com/wp-content/uploads/2020/08/robotics-automation-1024x72dpi.jpg",
         "rating": 4.5,
         "duration": "1hr 45min",
+        "discount": 50,
         "description": "Robotics and Automation Engineering is a multidisciplinary field focused on designing, developing, and implementing technologies that enable machines and systems to perform tasks autonomously or semi-autonomously. It combines elements from computer science, mechanical engineering, electrical engineering, and control systems to create robotic systems that can operate in various industries, including manufacturing, healthcare, agriculture, and more. This field involves the creation of robotic hardware, software, and control systems, aiming to improve efficiency, precision, safety, and productivity by reducing human intervention in repetitive or complex tasks. Advances in robotics and automation engineering are driving innovation across industries, revolutionizing the way we approach processes and tasks that were once considered time-consuming or hazardous.",
-        "price": "$109.99"
+        "price": 109.9
     },
     {
-        "id": 865024193758246,
         "course_name": "Game Engine Architecture",
         "instructor_name": "Samuel Turner",
         "image": "https://www.researchgate.net/publication/323179176/figure/fig2/AS:594109840510976@1518658232445/Detailed-game-engine-architecture.png",
         "rating": 4.8,
         "duration": "1hr 55min",
+        "discount": 35,
         "description": "Game Engine Architecture refers to the foundational structure and design principles that underlie the development of video game engines. It encompasses the complex framework responsible for handling various aspects of game creation and execution, including rendering graphics, managing physics, handling audio, and more. Game Engine Architecture involves the arrangement of components, modules, and systems that work together to provide a seamless and efficient environment for game developers to build, test, and deploy games across different platforms. Effective game engine architecture is crucial for optimizing performance, scalability, and flexibility, ensuring that game developers can focus on crafting engaging gameplay experiences without getting bogged down by technical intricacies.",
-        "price": "$79.99"
+        "price": 79.99
     },
     {
-        "id": 293841650572831,
         "course_name": "Neuromorphic Computing Fundamentals",
         "instructor_name": "Sophie Baker",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJSPAfKXzJhKthHOC1NbSoW9S_ajOiJvr8Cw&usqp=CAU",
         "rating": 4.7,
         "duration": "2hr 30min",
+        "discount": 65,
         "description": "Neuromorphic computing is a cutting-edge field in computer science and engineering that draws inspiration from the structure and function of the human brain to design highly efficient and brain-like computing systems. Unlike traditional digital computers, which use binary logic gates, neuromorphic computing employs specialized hardware and algorithms that mimic the complex neural networks found in biological brains. This approach enables neuromorphic systems to process information in a massively parallel and energy-efficient manner, making them well-suited for tasks such as pattern recognition, sensory processing, and cognitive computing. By leveraging the principles of neuromorphic computing, researchers aim to create more intelligent and adaptable computing systems that can potentially revolutionize fields such as artificial intelligence, robotics, and sensory data analysis.",
-        "price": "$119.99"
+        "price": 119.9
     }
 ]
