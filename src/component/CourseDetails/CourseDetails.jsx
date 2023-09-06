@@ -3,24 +3,24 @@ import { Link, useParams } from "react-router-dom";
 import { Rating } from "@smastrom/react-rating";
 
 const CourseDetails = () => {
-  const { _id } = useParams();
-  console.log(_id);
+  const { id } = useParams();
   const [details, setDetails] = useState(null);
 
 
   useEffect(() => {
-    fetch(`https://run-the-stack-server-delta.vercel.app/courses`)
+    fetch('https://run-the-stack-server-delta.vercel.app/courses')
       .then((res) => res.json())
       .then((data) => {
-        const course = data.find((course) => course.id == _id);
+        const course = data.find((course) => course._id == id);
         if (course) {
           setDetails(course);
         } else {
-          console.error(`Course with id ${_id} not found`);
+          console.error(`Course with id ${id} not found`);
         }
       })
       .catch((error) => console.error(error));
-  }, [_id]);
+  }, [id]);
+  
 
   return (
     <div>
