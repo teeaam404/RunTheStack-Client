@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import man from "../assets/img/website-logo.png";
 import { AiTwotoneLike } from 'react-icons/ai';
 import { FaCalendar, FaChartLine, FaDotCircle, FaEye, FaFacebook, FaFile, FaFileAlt, FaFootballBall, FaInstagram, FaLinkedin, FaLocationArrow, FaMap, FaPersonBooth, FaPhone, FaQuestionCircle, FaSign, FaTwitter, FaUser, FaUsers } from 'react-icons/fa';
@@ -7,9 +7,26 @@ import { BiLike } from 'react-icons/bi';
 import { TiMessages } from 'react-icons/ti';
 import { CgSmileMouthOpen } from 'react-icons/cg';
 import { RiLayoutColumnFill } from 'react-icons/ri';
+import { useContext } from 'react';
+import { AuthContext } from '../AuthProvider/AuthProvider';
 
 const Dashboard = () => {
+const[users,setUsers]=useState()
+const {user}=useContext(AuthContext)
+
+useEffect(()=>{
+  fetch('http://localhost:5000/users')
+  .then(res=>res.json())
+  .then(data=>{
+    console.log(data);
+    setUsers(data)
+  })
+},[])
+
   return (
+
+
+
     <div className='mb-8'>
       <img src="https://i.ibb.co/6NZLzbY/pexels-kelly-2876511.jpg" className='w-full h-40 lg:h-96' alt="" />
       {/* users */}
