@@ -1,4 +1,3 @@
-
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../Layouts/Main";
 import Home from "../Pages/Home/Home";
@@ -17,90 +16,95 @@ import UserProfile from "../Dashboard/UserProfile/UserProfile";
 import CourseDetails from "../component/CourseDetails/CourseDetails";
 import Theme from "../component/Theme/Theme";
 import PrivateRoute from "./PrivateRoute";
-import JoinGroup from "../Pages/Community/joinGroup/joinGroup"
+import JoinGroup from "../Pages/Community/joinGroup/joinGroup";
 
 export const router = createBrowserRouter([
-    {
+  {
+    path: "/",
+    element: <Main></Main>,
+    children: [
+      {
         path: "/",
-        element: <Main></Main>,
-        children: [
-            {
-                path: "/",
-                element: <Home />,
-            },
-            {
-                path: "/courses",
-                element: <Courses />,
-            },
-            {
-                path: "/theme",
-                element: <Theme />,
-            },
-            {
-                path: "/community",
-                element: <Community></Community>,
-            },
-            {
-                path: "/community/group/:id",
-                element: <JoinGroup></JoinGroup>
-            },
-            {
-                path: "/qna",
-                element: (
-                    <PrivateRoute>
-                        <QnaSection />
-                    </PrivateRoute>
-                ),
-            },
-            {
-                path: "login",
-                element: <Login />,
-            },
-            {
-                path: "registration",
-                element: <Registration></Registration>,
-            },
-            {
-                path: "about",
-                element: <About></About>,
-            },
-            {
-                path: "questions",
-                element: <Question></Question>,
-            },
-            {
-                path: "/questionAnswer/:id",
-                element: <QuestionAnswer />,
-            },
-            {
-                path: "/payment",
-                element: (
-                    <PrivateRoute>
-                        <Payment />
-                    </PrivateRoute>
-                ),
-            },
-            {
-                path: "courseDetails/:id",
-                element: <CourseDetails />,
-            },
-        ],
-    },
-    {
-        path: "dashboard",
-        element: <Dashboard></Dashboard>,
-        children: [
-            {
-                path: "profile",
-                element: <UserProfile></UserProfile>,
-            },
-            {
-                path: "admin",
-                element: <AdminProfile></AdminProfile>,
-            },
-        ],
-    },
+        element: <Home />,
+      },
+      {
+        path: "/courses",
+        element: <Courses />,
+      },
+      {
+        path: "/theme",
+        element: <Theme />,
+      },
+      {
+        path: "/community",
+        element: <Community></Community>,
+      },
+      {
+        path: "/community/group/:id",
+        element: <JoinGroup></JoinGroup>,
+      },
+      {
+        path: "/qna",
+        element: (
+          <PrivateRoute>
+            <QnaSection />
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "login",
+        element: <Login />,
+      },
+      {
+        path: "registration",
+        element: <Registration></Registration>,
+      },
+      {
+        path: "about",
+        element: <About></About>,
+      },
+      {
+        path: "questions",
+        element: <Question></Question>,
+      },
+      {
+        path: "questions/questionAnswer/:id",
+        element: <QuestionAnswer></QuestionAnswer>,
+        useLoader: ({ params }) =>
+          fetch(`https://run-the-stack-server-delta.vercel.app/${params.id}`),
+      },
+      {
+        path: "/payment",
+        element: (
+          <PrivateRoute>
+            <Payment />
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "courseDetails/:id",
+        element: <CourseDetails />,
+      },
+    ],
+  },
+  {
+    path: "dashboard",
+    element: (
+      <PrivateRoute>
+        <Dashboard></Dashboard>
+      </PrivateRoute>
+    ),
+    children: [
+      {
+        path: "profile",
+        element: <UserProfile></UserProfile>,
+      },
+      {
+        path: "admin",
+        element: <AdminProfile></AdminProfile>,
+      },
+    ],
+  },
 ]);
-
 
 export default router;

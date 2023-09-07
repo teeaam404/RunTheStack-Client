@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-import { useEffect, useState } from "react";
-// import { Rating } from "@smastrom/react-rating";
-// import "@smastrom/react-rating/style.css";
-=======
 import { Rating } from "@smastrom/react-rating";
 import { useEffect, useState } from "react";
 import "@smastrom/react-rating/style.css";
->>>>>>> a2f5330ff34b0e8d3dbe34176d3501eab02db077
 import { Link } from "react-router-dom";
 
 const Courses = () => {
@@ -38,17 +32,12 @@ const Courses = () => {
               <h3>Duration: {course.duration}</h3>
               <h1>Instructor Name: {course.instructor_name}</h1>
               <div>
-<<<<<<< HEAD
-                {/* <Rating
-                  style={{ maxWidth: 120 }}
-=======
                 <Rating
                   style={{ maxWidth: 110 }}
                   className=""
->>>>>>> a2f5330ff34b0e8d3dbe34176d3501eab02db077
                   value={course.rating}
                   readOnly
-                ></Rating> */}
+                ></Rating> */
               </div>
               <div className="card-actions justify-end">
                 <Link
