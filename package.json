@@ -15,6 +15,7 @@
     "@stripe/react-stripe-js": "^2.1.2",
     "@stripe/stripe-js": "^2.1.0",
     "aos": "^2.3.4",
+    "emailjs": "^4.0.3",
     "firebase": "^10.3.0",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
