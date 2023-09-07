@@ -12,21 +12,21 @@ import { AuthContext } from "../../AuthProvider/AuthProvider";
 const Question = () => {
   const [questions, setQuestions] = useState([]);
   const { user } = useContext(AuthContext);
-  // console.log(user);
+
 
   useEffect(() => {
     fetch("https://run-the-stack-server-delta.vercel.app/question")
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
         setQuestions(data);
       });
   }, []);
 
+
   return (
     <div className="secondary-bg">
       {questions.map((question) => (
-        <div key={question.id}>
+        <div key={question._id}>
           <div className="lg:flex gap-4  py-4 px-5">
             <div className="bg-slate-50 rounded px-5 py-6 lg:w-4/6 border-s-2 border-s-red-600 h-full">
               <div className="flex gap-3 mb-3">

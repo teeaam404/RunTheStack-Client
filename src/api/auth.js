@@ -1,5 +1,5 @@
 //save an user to mongodb
-export const saveUser = user => {
+export const saveUser = (user) => {
     const currentUser = {
         email: user.email,
         userImage: user.photoURL,

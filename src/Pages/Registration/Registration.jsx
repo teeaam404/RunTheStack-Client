@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { Toaster, toast } from "react-hot-toast";
+import { toast } from "react-hot-toast";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import { saveUser } from "../../api/auth";
 import { AiFillGoogleCircle } from "react-icons/ai";
@@ -71,7 +71,6 @@ const Registration = () => {
         console.log(err.message);
         toast.error(err.message);
       });
-
     return;
   };
 
@@ -149,6 +148,7 @@ const Registration = () => {
                 className="input shadow-inner shadow-slate-300"
               />
             </div>
+
             <div className="form-control mt-6 w-[53%] mx-auto">
               <input
                 className="btn primary-bg text-white"
