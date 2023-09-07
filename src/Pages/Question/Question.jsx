@@ -50,7 +50,7 @@ const Question = () => {
           />
           <button className="btn btn-sm btn-primary">Search</button>
           {/* Ask Question */}
-          <Link className="md:ml-2 btn-sm">
+          <Link to="/qna" className="md:ml-2 btn-sm">
             <a
               href="#_"
               className="relative inline-flex items-center justify-center px-12 py-2 overflow-hidden font-mono font-medium tracking-tighter text-white bg-gray-800 rounded-lg group"

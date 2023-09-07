@@ -68,10 +68,8 @@ export const router = createBrowserRouter([
         element: <Question></Question>,
       },
       {
-        path: "questions/questionAnswer/:id",
-        element: <QuestionAnswer></QuestionAnswer>,
-        useLoader: ({ params }) =>
-          fetch(`https://run-the-stack-server-delta.vercel.app/${params.id}`),
+        path: "/questionAnswer/:id",
+        element: <QuestionAnswer />,
       },
       {
         path: "/payment",
