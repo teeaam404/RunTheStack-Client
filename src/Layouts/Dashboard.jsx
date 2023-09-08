@@ -27,13 +27,9 @@ import { BiLike } from "react-icons/bi";
 import { TiMessages } from "react-icons/ti";
 import { CgSmileMouthOpen } from "react-icons/cg";
 import { RiLayoutColumnFill } from "react-icons/ri";
-
-import { useEffect, useState } from "react";
-const Dashboard = () => {
 import { useContext, useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
 import { AuthContext } from "../AuthProvider/AuthProvider";
-
+import { Link, useParams } from "react-router-dom";
 const Dashboard = () => {
   const { user } = useContext(AuthContext);
   const [userData, setUserData] = useState(null); // Store the user data
@@ -67,17 +63,19 @@ const Dashboard = () => {
               experience
             </p>
 
-            <div className="my-4">
-              <a
-                href="#_"
-                className="relative inline-flex items-center justify-center px-10 py-2 overflow-hidden font-mono font-medium tracking-tighter text-white bg-gray-800 rounded-lg group"
-              >
-                <span className="absolute w-0 h-0 transition-all duration-500 ease-out bg-green-500 rounded-full group-hover:w-56 group-hover:h-56"></span>
-                <span className="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>
-                <span className="relative">Ask</span>
-              </a>
-            </div>
-            <div className="divider mx-4"></div>
+                <div className="my-4">
+                  <Link to="/editProfile" className="md:ml-2 btn-sm">
+                    <btn
+                      href="#_"
+                      className="relative inline-flex items-center justify-center px-10 py-2 overflow-hidden font-mono font-medium tracking-tighter text-white bg-gray-800 rounded-lg group"
+                    >
+                      <span className="absolute w-0 h-0 transition-all duration-500 ease-out bg-green-500 rounded-full group-hover:w-56 group-hover:h-56"></span>
+                      <span className="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>
+                      <span className="relative">Edit Profile</span>
+                    </btn>
+                  </Link>
+                </div>
+                <div className="divider mx-4"></div>
 
             <div className="grid lg:grid-cols-1 sm:grid-cols-2 gap-12">
               {/* user statistic */}
@@ -88,35 +86,16 @@ const Dashboard = () => {
                 </h2>
 
                 <div className="my-4">
-                  {/* visit */}
-                  <a
-                    href="#_"
-                    class="relative inline-flex items-center justify-center p-4 w-96 px-6 py-3 overflow-hidden font-medium text-black-600 transition duration-300 ease-out border-2 border-base-500 rounded-full shadow-md group"
-                  >
-                    <span class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-primary group-hover:translate-x-0 ease">
-                      <svg
-                        class="w-40 h-6"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M14 5l7 7m0 0l-7 7m7-7H3"
-                        ></path>
-                      </svg>
-                    </span>
-                    <span class="absolute flex items-center justify-center w-full h-full text-primary transition-all duration-300 transform group-hover:translate-x-full ease">
-                      <FaEye />{" "}
-                      <span className="ms-2">
-                        Visits <span className="ms-60">5</span>{" "}
-                      </span>
-                    </span>
-                    <span class="relative invisible">Button Text</span>
-                  </a>
+                  <Link to="/editProfile" className="md:ml-2 btn-sm">
+                    <btn
+                      href="#_"
+                      className="relative inline-flex items-center justify-center px-10 py-2 overflow-hidden font-mono font-medium tracking-tighter text-white bg-gray-800 rounded-lg group"
+                    >
+                      <span className="absolute w-0 h-0 transition-all duration-500 ease-out bg-green-500 rounded-full group-hover:w-56 group-hover:h-56"></span>
+                      <span className="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>
+                      <span className="relative">Edit Profile</span>
+                    </btn>
+                  </Link>
                 </div>
                 {/*  */}
                 <div className="my-4">
