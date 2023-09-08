@@ -8,6 +8,12 @@ import {
   FaTimesCircle,
   FaWatchmanMonitoring,
 } from "react-icons/fa";
+import { AiTwotoneLike } from "react-icons/ai";
+
+import { FcLike } from "react-icons/fc";
+import { BiLike } from "react-icons/bi";
+import { TiMessages } from "react-icons/ti";
+import { CgSmileMouthOpen } from "react-icons/cg";
 import { Link, useParams } from "react-router-dom";
 
 const QuestionAnswer = () => {
@@ -91,7 +97,92 @@ const QuestionAnswer = () => {
               </div>
             </div>
           </div>
-          <button className="btn  btn-primary">Comment</button>
+          <div className="py-4">
+            <div className="bg-slate-50 rounded px-5 py-6 lg:w-full border-2 border-s-2 border-s-red-600 h-full">
+              <div className=" "></div>
+              <div className="flex gap-3 mb-3">
+                <div>
+                  <img
+                    className="rounded-full"
+                    src={matchingAnswer.userImage}
+                    alt="man"
+                    width={30}
+                    height={30}
+                  />
+                </div>
+                <div>
+                  <a
+                    className="text-pink-500 font-bold hover:text-slate-600"
+                    href=""
+                  >
+                    {matchingAnswer.userName}
+                  </a>
+                </div>
+                <div>
+                  <p className="bg-blue-600 px-2 text-white rounded">
+                    Enlightened
+                  </p>
+                </div>
+                <div>
+                  <p>
+                    Asked:{" "}
+                    <a className="text-slate-600 hover:text-slate-900" href="">
+                      January 4, 2022
+                    </a>
+                  </p>
+                </div>
+                <div>
+                  <a className="hover:text-sky-600" href="">
+                    Comic Books
+                  </a>
+                </div>
+              </div>
+              <a className="text-2xl font-bold hover:text-pink-500" href="">
+                {matchingAnswer.title}
+              </a>
+              <p className="mt-3 mb-3">{matchingAnswer.body}</p>
+              <div className="flex gap-3 mb-5">
+                <a
+                  className="bg-slate-200 hover:border-black hover:border-2 px-2 rounded"
+                  href=""
+                >
+                  {matchingAnswer.tags}
+                </a>
+              </div>
+              <hr />
+              <div className="lg:flex justify-between items-center gap-3 mt-5">
+                <div className="flex gap-3">
+                  <div className="border-2 p-2 rounded-full h-full">
+                    <AiTwotoneLike
+                      className="text-slate-900 bg-white "
+                      size={20}
+                    />
+                  </div>
+                  <div className="border-s-2 "></div>
+                  <div className="ms-2 flex items-center">
+                    <p className="ms-2">130 Like</p>
+                    <div className="ms-2 flex">
+                      <div className="flex gap-2 border-2 py-2 px-3 h-full text-blue-500">
+                        <a href="">
+                          <TiMessages size={20} />
+                        </a>
+                        <span>2</span>
+                      </div>
+                      <div className="flex gap-2 items-center ms-3 border-2 py-2 px-3 h-full">
+                        <FaEye />
+                        <p>6K Views</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="">
+                  <button className="bg-black text-white font-bold hover:bg-pink-500 px-5 py-1 rounded">
+                    Answer
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>{" "}
         </div>
       ) : (
         <p>No matching answer found.</p>

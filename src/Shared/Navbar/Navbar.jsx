@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import Theme from "../../component/Theme/Theme";
@@ -7,7 +7,8 @@ import profile from "../../assets/placeholder.jpg";
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
-  
+  console.log(user);
+
   return (
     <div className="navbar common-bg">
       <div className="navbar-start lg:hidden">
@@ -110,7 +111,7 @@ const Navbar = () => {
             <span className="badge badge-xs badge-primary indicator-item"></span>
           </div>
         </button>
-        <Link to="/dashboard/profile" className="avatar me-3">
+        <Link to={`/dashboard`} className="avatar me-3">
           <div className="w-8 rounded-full ring-inherit ring ring-offset-base-100 ring-offset-2">
             {user ? (
               <img src={user?.photoURL} alt="Profile" />
