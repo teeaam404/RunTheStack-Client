@@ -16,8 +16,8 @@ const QuestionTable = ({ question }) => {
             {/* row 1 */}
             <tr>
               <td>
-                <div className="lg:flex items-center gap-4 justify-between">
-                  <div className="lg:flex gap-4">
+                <div className="flex items-center gap-4 justify-between">
+                  <div className="flex gap-4">
                     <div className="avatar">
                       <div className="mask mask-squircle w-12 h-12">
                         <Link to={`/questionAnswer/${question._id}`}>
@@ -53,7 +53,12 @@ const QuestionTable = ({ question }) => {
                                 100Like
                               </span>
                             </div>
-
+                            <div className="btn btn-sm bg-white text-blue-800">
+                              <Link to="">
+                                <TiMessages size={23} />
+                              </Link>
+                              <span>1</span>
+                            </div>
                             <div className="flex gap-2 my-2">
                               <span className="  text-lg rounded-2xl opacity-70">
                                 <FaEye />
@@ -73,18 +78,11 @@ const QuestionTable = ({ question }) => {
                             </div>
                           </div>
                           <span></span>
-
-                          <div className="btn btn-sm bg-white text-blue-800">
-                            <Link to="">
-                              <TiMessages size={23} />
-                            </Link>
-                            <span>1</span>
-                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <button className="btn btn-primary">Vote</button>
+                  <button className="btn btn-primary btn-sm">Vote</button>
                 </div>
               </td>
             </tr>

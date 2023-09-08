@@ -43,8 +43,11 @@ const EditProfile = () => {
           </Link>
         </div>
       </div>{" "}
-      <form onSubmit={handleSubmit}>
-        <div className="form-control">
+      <form
+        className="lg:px-40 px-8 border-blue-800 border-2 py-8 "
+        onSubmit={handleSubmit}
+      >
+        <div className="form-control ">
           <label className="label font-bold">
             <span className="text-lg">Full Name</span>
           </label>
