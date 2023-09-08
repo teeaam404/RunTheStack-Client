@@ -27,10 +27,6 @@ import Redux from "../Pages/Group/Redux/Redux";
 
 export const router = createBrowserRouter([
   {
-    path: "/",
-    element: <Main></Main>,
-    children: [
-      {
         path: "/",
         element: <Main></Main>,
         children: [
@@ -130,34 +126,6 @@ export const router = createBrowserRouter([
             },
         ],
     },
-
-      {
-        path: "userProfile/:email",
-        element: <UserProfile></UserProfile>,
-      },
-
-    ],
-  },
-  {
-    path: "dashboard",
-    element: (
-      <PrivateRoute>
-        <Dashboard></Dashboard>
-      </PrivateRoute>
-    ),
-    children: [
-      {
-
-        path: "profile",
-        element: <UserProfile></UserProfile>,
-      },
-      {
-
-        path: "admin",
-        element: <AdminProfile></AdminProfile>,
-      },
-    ],
-  },
 ]);
 
 export default router;
