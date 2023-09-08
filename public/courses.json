@@ -1,3 +1,6 @@
+
+[
+    {
 [{
         "course_name": "Introduction to Computer Science",
         "instructor_name": "John Smith",
@@ -19,6 +22,13 @@
         "price": 69.99
     },
     {
+<<<<<<< HEAD
+
+
+        "id": 126598374820356,
+
+=======
+>>>>>>> a2f5330ff34b0e8d3dbe34176d3501eab02db077
         "course_name": "Web Development Bootcamp",
         "instructor_name": "Mike Johnson",
         "image": "https://www.filepicker.io/api/file/FSIjaoI2QtKWZL65cogd",
@@ -31,6 +41,10 @@
     {
 
 
+<<<<<<< HEAD
+        "id": 573821046985632,
+=======
+>>>>>>> a2f5330ff34b0e8d3dbe34176d3501eab02db077
 
         "course_name": "Machine Learning Fundamentals",
         "instructor_name": "Emily Williams",
@@ -52,6 +66,10 @@
         "price": 59.99
     },
     {
+<<<<<<< HEAD
+        "id": 385720196438217,
+=======
+>>>>>>> a2f5330ff34b0e8d3dbe34176d3501eab02db077
 
         "course_name": "Problem Solving Bootcamp",
         "instructor_name": "David Warner",
@@ -63,6 +81,12 @@
         "price": 21.99
     },
     {
+<<<<<<< HEAD
+
+        "id": 652847109385726,
+
+=======
+>>>>>>> a2f5330ff34b0e8d3dbe34176d3501eab02db077
         "course_name": "React Basic to Advance",
         "instructor_name": "Stark Michel",
         "image": "https://courses.wscubetech.com/s/store/courses/60179b3f0cf2ab0d7162b210/cover.jpg?v=1",
@@ -74,6 +98,11 @@
     },
     {
 
+<<<<<<< HEAD
+        "id": 291034586723154,
+
+=======
+>>>>>>> a2f5330ff34b0e8d3dbe34176d3501eab02db077
         "course_name": "Software Engineering Principles",
         "instructor_name": "Alex Turner",
         "image": "https://www.interviewbit.com/blog/wp-content/uploads/2022/02/Software-Engineering-Principles-1024x573.png",
@@ -84,6 +113,11 @@
         "price": 59.99
     },
     {
+<<<<<<< HEAD
+        "id": 837465920134857,
+
+=======
+>>>>>>> a2f5330ff34b0e8d3dbe34176d3501eab02db077
         "course_name": "Mobile App Development with React Native",
         "instructor_name": "Chris Anderson",
         "image": "https://www.freecodecamp.org/news/content/images/2023/04/reactnative.png",
@@ -94,6 +128,12 @@
         "price": 79.99
     },
     {
+<<<<<<< HEAD
+
+        "id": 154893672059318,
+
+=======
+>>>>>>> a2f5330ff34b0e8d3dbe34176d3501eab02db077
         "course_name": "Artificial Intelligence and Ethics",
         "instructor_name": "Sophia Martinez",
         "image": "https://www.kuppingercole.com/pics/2018_ai_banner_1000x563px.png",
@@ -104,6 +144,12 @@
         "price": 49.99
     },
     {
+<<<<<<< HEAD
+
+        "id": 726530184975362,
+
+=======
+>>>>>>> a2f5330ff34b0e8d3dbe34176d3501eab02db077
         "course_name": "Cloud Computing Fundamentals",
         "instructor_name": "Michael Clark",
         "image": "https://eadn-wc03-4064062.nxedge.io/wp-content/uploads/2021/08/CloudFormation_BlogImage-1.png",
@@ -115,6 +161,11 @@
     },
     {
 
+<<<<<<< HEAD
+        "id": 195763042874516,
+
+=======
+>>>>>>> a2f5330ff34b0e8d3dbe34176d3501eab02db077
         "course_name": "Blockchain Development Masterclass",
         "instructor_name": "Elena Petrov",
         "image": "https://101blockchains.com/wp-content/uploads/2022/03/blockchain-like-a-boss.png",
@@ -155,6 +206,12 @@
         "price": 89.99
     },
     {
+<<<<<<< HEAD
+
+        "id": 521349867067895,
+
+=======
+>>>>>>> a2f5330ff34b0e8d3dbe34176d3501eab02db077
         "course_name": "Robotics and Automation Engineering",
         "instructor_name": "Martin Andersson",
         "image": "https://www.e-spincorp.com/wp-content/uploads/2020/08/robotics-automation-1024x72dpi.jpg",

@@ -17,7 +17,6 @@ const QnaSection = () => {
       tags: data.tags,
       date: data.date,
     };
-    console.log(data); // You can replace this with your desired form submission logic
     fetch("https://run-the-stack-server-delta.vercel.app/question", {
       method: "POST",
       headers: {
@@ -38,7 +37,7 @@ const QnaSection = () => {
         }
       });
   };
-  const predefinedTags = ["html", "css", "tailwind"];
+  const predefinedTags = ["CSS","JavaScript", "React","HTML","Bootstrap","Tailwind"];
 
   return (
     <div className="hero min-h-screen bg-base-200">
@@ -48,7 +47,7 @@ const QnaSection = () => {
             <form onSubmit={handleSubmit(onSubmit)}>
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text">Title:</span>
+                  <span className="label-text font-bold">Question Name:</span>
                 </label>
                 <input
                   type="text"
@@ -59,7 +58,7 @@ const QnaSection = () => {
               </div>
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text">Body:</span>
+                  <span className="label-text font-bold">Description:</span>
                 </label>
                 <textarea
                   id="body"
@@ -106,6 +105,7 @@ const QnaSection = () => {
         </div>
       </div>
     </div>
+   
   );
 };
 
