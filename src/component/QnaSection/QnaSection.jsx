@@ -37,12 +37,12 @@ const QnaSection = () => {
         }
       });
   };
-  const predefinedTags = ["CSS","JavaScript", "React","HTML","Bootstrap","Tailwind"];
+  const predefinedTags = ["CSS","JavaScript", "React","HTML","Bootstrap","Tailwind", "Ethical Hacking", "C#", "C++", "DotNet", "Machine Learning"];
 
   return (
-    <div className="hero min-h-screen bg-base-200">
-      <div className="hero-content flex-col lg:flex-row-reverse">
-        <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+    <div className="bg-base-200">
+      <div className="hero-content flex-col mx-auto lg:flex-row-reverse">
+        <div className="card flex-shrink-0 w-full shadow-2xl bg-base-100">
           <div className="card-body">
             <form onSubmit={handleSubmit(onSubmit)}>
               <div className="form-control">

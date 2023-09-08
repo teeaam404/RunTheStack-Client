@@ -29,9 +29,8 @@ import { RiLayoutColumnFill } from "react-icons/ri";
 import { useEffect, useState } from "react";
 
 const Dashboard = () => {
-  const [users, setUsers] = useState();
   useEffect(() => {
-    fetch("http://localhost:5000/users")
+    fetch("https://run-the-stack-server-delta.vercel.app/users")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);

@@ -14,6 +14,7 @@ const Question = () => {
         setQuestions(data);
       });
   }, []);
+  
   return (
     <div className="bg-base-200">
       <div className="bg-blue-900 h-52 w-full">
