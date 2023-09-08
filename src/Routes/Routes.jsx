@@ -17,6 +17,7 @@ import CourseDetails from "../component/CourseDetails/CourseDetails";
 import Theme from "../component/Theme/Theme";
 import PrivateRoute from "./PrivateRoute";
 import JoinGroup from "../Pages/Community/joinGroup/joinGroup";
+import EditProfile from "../Dashboard/EditProfile/EditProfile";
 
 export const router = createBrowserRouter([
   {
@@ -86,6 +87,10 @@ export const router = createBrowserRouter([
       {
         path: "userProfile/:email",
         element: <UserProfile></UserProfile>,
+      },
+      {
+        path: "editProfile",
+        element: <EditProfile />,
       },
     ],
   },
