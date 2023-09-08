@@ -17,11 +17,13 @@ import CourseDetails from "../component/CourseDetails/CourseDetails";
 import Theme from "../component/Theme/Theme";
 import PrivateRoute from "./PrivateRoute";
 import JoinGroup from "../Pages/Community/joinGroup/joinGroup";
+
 import JavaGroup from "../Pages/Group/Java/JavaGroup";
 import Php from "../Pages/Group/Php/Php";
 import JavaScript from "../Pages/Group/JavaScript";
 import Python from "../Pages/Group/Python/Python";
 import Redux from "../Pages/Group/Redux/Redux";
+
 
 export const router = createBrowserRouter([
   {
