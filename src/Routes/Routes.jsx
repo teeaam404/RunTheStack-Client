@@ -17,11 +17,13 @@ import CourseDetails from "../component/CourseDetails/CourseDetails";
 import Theme from "../component/Theme/Theme";
 import PrivateRoute from "./PrivateRoute";
 import JoinGroup from "../Pages/Community/joinGroup/joinGroup";
+
 import JavaGroup from "../Pages/Group/Java/JavaGroup";
 import Php from "../Pages/Group/Php/Php";
 import JavaScript from "../Pages/Group/JavaScript";
 import Python from "../Pages/Group/Python/Python";
 import Redux from "../Pages/Group/Redux/Redux";
+
 
 export const router = createBrowserRouter([
   {
@@ -128,68 +130,12 @@ export const router = createBrowserRouter([
             },
         ],
     },
-        element: <Home />,
-      },
-      {
-        path: "/courses",
-        element: <Courses />,
-      },
-      {
-        path: "/theme",
-        element: <Theme />,
-      },
-      {
-        path: "/community",
-        element: <Community></Community>,
-      },
-      {
-        path: "/community/group/:id",
-        element: <JoinGroup></JoinGroup>,
-      },
-      {
-        path: "/qna",
-        element: (
-          <PrivateRoute>
-            <QnaSection />
-          </PrivateRoute>
-        ),
-      },
-      {
-        path: "login",
-        element: <Login />,
-      },
-      {
-        path: "registration",
-        element: <Registration></Registration>,
-      },
-      {
-        path: "about",
-        element: <About></About>,
-      },
-      {
-        path: "questions",
-        element: <Question></Question>,
-      },
-      {
-        path: "/questionAnswer/:id",
-        element: <QuestionAnswer />,
-      },
-      {
-        path: "/payment",
-        element: (
-          <PrivateRoute>
-            <Payment />
-          </PrivateRoute>
-        ),
-      },
-      {
-        path: "courseDetails/:id",
-        element: <CourseDetails />,
-      },
+
       {
         path: "userProfile/:email",
         element: <UserProfile></UserProfile>,
       },
+
     ],
   },
   {
@@ -201,6 +147,12 @@ export const router = createBrowserRouter([
     ),
     children: [
       {
+
+        path: "profile",
+        element: <UserProfile></UserProfile>,
+      },
+      {
+
         path: "admin",
         element: <AdminProfile></AdminProfile>,
       },
