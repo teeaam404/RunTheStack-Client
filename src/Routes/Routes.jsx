@@ -18,73 +18,81 @@ import Theme from "../component/Theme/Theme";
 import PrivateRoute from "./PrivateRoute";
 import JoinGroup from "../Pages/Community/joinGroup/joinGroup";
 import EditProfile from "../Dashboard/EditProfile/EditProfile";
+
 export const router = createBrowserRouter([
-  { path: "/", 
-  element: <Home /> 
-  },
   {
-    path: "/courses",
-    element: <Courses />,
-  },
-  {
-    path: "/theme",
-    element: <Theme />,
-  },
-  {
-    path: "/community",
-    element: <Community></Community>,
-  },
-  {
-    path: "/community/group/:id",
-    element: <JoinGroup></JoinGroup>,
-  },
-  {
-    path: "/qna",
-    element: (
-      <PrivateRoute>
-        <QnaSection />
-      </PrivateRoute>
-    ),
-  },
-  {
-    path: "login",
-    element: <Login />,
-  },
-  {
-    path: "registration",
-    element: <Registration></Registration>,
-  },
-  {
-    path: "about",
-    element: <About></About>,
-  },
-  {
-    path: "questions",
-    element: <Question></Question>,
-  },
-  {
-    path: "/questionAnswer/:id",
-    element: <QuestionAnswer />,
-  },
-  {
-    path: "/payment",
-    element: (
-      <PrivateRoute>
-        <Payment />
-      </PrivateRoute>
-    ),
-  },
-  {
-    path: "courseDetails/:id",
-    element: <CourseDetails />,
-  },
-  {
-    path: "userProfile/:email",
-    element: <UserProfile></UserProfile>,
-  },
-  {
-    path: "editProfile",
-    element: <EditProfile />,
+    path: "/",
+    element: <Main></Main>,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "/courses",
+        element: <Courses />,
+      },
+      {
+        path: "/theme",
+        element: <Theme />,
+      },
+      {
+        path: "/community",
+        element: <Community></Community>,
+      },
+      {
+        path: "/community/group/:id",
+        element: <JoinGroup></JoinGroup>,
+      },
+      {
+        path: "/qna",
+        element: (
+          <PrivateRoute>
+            <QnaSection />
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "login",
+        element: <Login />,
+      },
+      {
+        path: "registration",
+        element: <Registration></Registration>,
+      },
+      {
+        path: "about",
+        element: <About></About>,
+      },
+      {
+        path: "questions",
+        element: <Question></Question>,
+      },
+      {
+        path: "/questionAnswer/:id",
+        element: <QuestionAnswer />,
+      },
+      {
+        path: "/payment",
+        element: (
+          <PrivateRoute>
+            <Payment />
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "courseDetails/:id",
+        element: <CourseDetails />,
+      },
+      {
+        path: "userProfile/:email",
+        element: <UserProfile></UserProfile>,
+      },
+      {
+        path: "editProfile",
+        element: <EditProfile />,
+      },
+    ],
   },
   {
     path: "dashboard",

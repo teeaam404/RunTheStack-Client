@@ -27,8 +27,9 @@ import { BiLike } from "react-icons/bi";
 import { TiMessages } from "react-icons/ti";
 import { CgSmileMouthOpen } from "react-icons/cg";
 import { RiLayoutColumnFill } from "react-icons/ri";
-import { useEffect, useState } from "react";
-
+import { useContext, useEffect, useState } from "react";
+import { AuthContext } from "../AuthProvider/AuthProvider";
+import { Link, useParams } from "react-router-dom";
 const Dashboard = () => {
   const { user } = useContext(AuthContext);
   const [userData, setUserData] = useState(null); // Store the user data
