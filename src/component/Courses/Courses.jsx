@@ -23,7 +23,7 @@ const Courses = () => {
     <div>
       <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-5 mx-5 gap-10">
         {courses.slice(0, showAll ? 18 : 9).map((course) => (
-          <div key={course.id} className="card w-96 glass">
+          <div key={course._id} className="card w-96 glass">
             <figure>
               <img className="w-full h-52" src={course.image} alt="image" />
             </figure>

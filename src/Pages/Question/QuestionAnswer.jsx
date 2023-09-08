@@ -127,7 +127,8 @@ const QuestionAnswer = () => {
                   <p>
                     Asked:{" "}
                     <a className="text-slate-600 hover:text-slate-900" href="">
-                      January 4, 2022
+
+                      {matchingAnswer.date}
                     </a>
                   </p>
                 </div>
