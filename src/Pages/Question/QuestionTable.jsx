@@ -20,10 +20,12 @@ const QuestionTable = ({ question }) => {
                   <div className="lg:flex gap-4">
                     <div className="avatar">
                       <div className="mask mask-squircle w-12 h-12">
-                        <img
-                          src={question.userImage}
-                          alt="Avatar Tailwind CSS Component"
-                        />
+                        <Link to={`/questionAnswer/${question._id}`}>
+                          <img
+                            src={question.userImage}
+                            alt="Avatar Tailwind CSS Component"
+                          />
+                        </Link>
                       </div>
                     </div>
 
@@ -31,7 +33,9 @@ const QuestionTable = ({ question }) => {
                       <Link to={`/questionAnswer/${question._id}`}>
                         <Link to={`/userProfile/${question.email}`}>
                           {" "}
-                          <h2>{question.userName}</h2>
+                          <h2 className="font-bold text-blue-900">
+                            {question.userName}
+                          </h2>
                         </Link>
                         <div className="font-bold text-lg">
                           {question.title}

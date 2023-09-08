@@ -14,6 +14,7 @@ import {
   FaMap,
   FaPersonBooth,
   FaPhone,
+  FaQuestion,
   FaQuestionCircle,
   FaSign,
   FaTwitter,
@@ -26,7 +27,7 @@ import { TiMessages } from "react-icons/ti";
 import { CgSmileMouthOpen } from "react-icons/cg";
 import { RiLayoutColumnFill } from "react-icons/ri";
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 const UserProfile = () => {
   const [users, setUsers] = useState([]);
@@ -48,7 +49,18 @@ const UserProfile = () => {
       {filteredUsers.map((user) => (
         <div key={user._id}>
           <div className="mb-8">
-            <img src={user.userImage} className="w-full h-40 lg:h-96" alt="" />
+            <div className="bg-blue-900 h-52 w-full">
+              <div className="py-12 px-4 md:px-20">
+                <h1 className="text-white font-bold text-3xl md:text-5xl flex gap-4">
+                  <FaUser className="" /> {user.userName}
+                </h1>
+
+                <hr className="mt-4 opacity-30" />
+                <Link to="/questions">
+                  <FaQuestion className="text-white text-xl mt-2" />
+                </Link>
+              </div>
+            </div>
             {/* users */}
             <div className="max-w-screen-2xl mx-auto">
               <div className="lg:flex">
@@ -280,7 +292,7 @@ const UserProfile = () => {
                         <div>
                           <img
                             className="rounded-full"
-                            src="{man}"
+                            src={user.userImage}
                             alt="man"
                             width={30}
                             height={30}
