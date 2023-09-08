@@ -127,6 +127,7 @@ const QuestionAnswer = () => {
                   <p>
                     Asked:{" "}
                     <a className="text-slate-600 hover:text-slate-900" href="">
+
                       {matchingAnswer.date}
                     </a>
                   </p>

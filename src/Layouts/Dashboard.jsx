@@ -9,6 +9,7 @@ import {
   FaFile,
   FaFileAlt,
   FaFootballBall,
+  FaHome,
   FaInstagram,
   FaLinkedin,
   FaLocationArrow,
@@ -26,16 +27,19 @@ import { BiLike } from "react-icons/bi";
 import { TiMessages } from "react-icons/ti";
 import { CgSmileMouthOpen } from "react-icons/cg";
 import { RiLayoutColumnFill } from "react-icons/ri";
+
 import { useEffect, useState } from "react";
+const Dashboard = () => {
+import { useContext, useEffect, useState } from "react";
+import { Link, useParams } from "react-router-dom";
+import { AuthContext } from "../AuthProvider/AuthProvider";
 
 const Dashboard = () => {
-  useEffect(() => {
-    fetch("https://run-the-stack-server-delta.vercel.app/users")
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data);
-      });
-  }, []);
+  const { user } = useContext(AuthContext);
+  const [userData, setUserData] = useState(null); // Store the user data
+  const { email } = useParams();
+
+
   return (
     <div className="mb-8">
       <img

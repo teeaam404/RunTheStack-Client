@@ -37,7 +37,7 @@ const Courses = () => {
                   className=""
                   value={course.rating}
                   readOnly
-                ></Rating>
+                ></Rating> */
               </div>
               <div className="card-actions justify-end">
                 <Link

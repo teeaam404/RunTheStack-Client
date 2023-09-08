@@ -40,7 +40,13 @@ const Registration = () => {
     formData.append("image", image);
 
     try {
+
       const url = `https://api.imgbb.com/1/upload?key=${import.meta.env.VITE_IMGBB_KEY}`;
+
+      const url = `https://api.imgbb.com/1/upload?key=${
+        import.meta.env.VITE_IMGBB_KEY
+      }`;
+
       const response = await fetch(url, {
         method: "POST",
         body: formData,
@@ -81,9 +87,13 @@ const Registration = () => {
     <div className="reg-bg">
       <div className="md:w-[50%] md:ml-5  bg-slate-50 bg-opacity-10 glass">
         <div className="card-body my-5">
+
           <h1 className="text-4xl font-bold primary-text">
             Registration Form
           </h1>
+
+          <h1 className="text-4xl font-bold primary-text">Registration Form</h1>
+
 
           {/* Form Start */}
           <form onSubmit={handleSubmit}>
