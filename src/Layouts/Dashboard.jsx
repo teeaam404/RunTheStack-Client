@@ -34,9 +34,10 @@ const Dashboard = () => {
     fetch("http://localhost:5000/users")
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+        setUsers(data);
       });
   }, []);
+
   return (
     <div className="mb-8">
       <img
