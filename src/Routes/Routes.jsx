@@ -16,7 +16,12 @@ import UserProfile from "../Dashboard/UserProfile/UserProfile";
 import CourseDetails from "../component/CourseDetails/CourseDetails";
 import Theme from "../component/Theme/Theme";
 import PrivateRoute from "./PrivateRoute";
-import JoinGroup from "../Pages/Community/joinGroup/joinGroup"
+import JoinGroup from "../Pages/Community/joinGroup/joinGroup";
+import JavaGroup from "../Pages/Group/Java/JavaGroup";
+import Php from "../Pages/Group/Php/Php";
+import JavaScript from "../Pages/Group/JavaScript";
+import Python from "../Pages/Group/Python/Python";
+import Redux from "../Pages/Group/Redux/Redux";
 
 export const router = createBrowserRouter([
     {
@@ -40,8 +45,28 @@ export const router = createBrowserRouter([
                 element: <Community></Community>,
             },
             {
-                path: "/community/group/:id",
+                path: "/group1",
                 element: <JoinGroup></JoinGroup>
+            },
+            {
+                path: "/tailwind",
+                element: <JavaGroup></JavaGroup>
+            },
+            {
+                path: "/php",
+                element: <Php></Php>
+            },
+            {
+                path: "/javaScript",
+                element: <JavaScript></JavaScript>
+            },
+            {
+                path: "/python",
+                element: <Python></Python>
+            },
+            {
+                path: "/redux",
+                element: <Redux></Redux>
             },
             {
                 path: "/qna",

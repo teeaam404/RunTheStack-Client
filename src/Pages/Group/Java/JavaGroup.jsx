@@ -1,3 +1,4 @@
+import React from 'react';
 import { useEffect, useState } from "react";
 import { BiLike } from "react-icons/bi";
 import { BsPeopleFill, BsReplyFill } from "react-icons/bs";
@@ -7,11 +8,10 @@ import { MdEmojiPeople, MdTagFaces } from "react-icons/md";
 import { PiShareBold } from "react-icons/pi";
 
 
-const JoinGroup = () => {
-
+const JavaGroup = () => {
     const [questions, setQuestions] = useState([]);
 
-    const findResults = questions.filter((findResult) => findResult.tags == 'css');
+    const findResults = questions.filter((findResult) => findResult.tags == 'tailwind');
 
     useEffect(() => {
         fetch("https://run-the-stack-server-delta.vercel.app/question")
@@ -26,9 +26,9 @@ const JoinGroup = () => {
     return (
         <div className=''>
             <div className="flex py-2 gap-2">
-                <img className="w-2/6 h-[160px] ps-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvA00GaUwlwEKhXxDgarATH7yRlRh3utSexQ&usqp=CAU" alt="" />
+                <img className="w-2/6 h-[160px] ps-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU-mspyndicMBTk-KdKp96OZiaD2rkYLYzFQ&usqp=CAU" alt="" />
                 <div className=" w-4/6 border-[2px] ps-4 shadow-xl pt-4 pe-2">
-                    <h2 className="text-2xl font-bold text-pink-600">CSS Learner</h2>
+                    <h2 className="text-2xl font-bold text-pink-600">Tailwind Learner</h2>
                     <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto debitis numquam perspiciatis.......</h2>
                     <div className="flex my-auto pt-2">
                         <MdEmojiPeople className="text-red-500" size={25}></MdEmojiPeople>
@@ -123,4 +123,4 @@ const JoinGroup = () => {
     );
 };
 
-export default JoinGroup;
+export default JavaGroup;
