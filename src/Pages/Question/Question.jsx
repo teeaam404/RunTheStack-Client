@@ -11,7 +11,6 @@ const Question = () => {
     fetch("https://run-the-stack-server-delta.vercel.app/question")
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
         setQuestions(data);
       });
   }, []);

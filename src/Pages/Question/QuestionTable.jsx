@@ -4,7 +4,7 @@ import { BiLike } from "react-icons/bi";
 import { TiMessages } from "react-icons/ti";
 import { Link } from "react-router-dom";
 const QuestionTable = ({ question }) => {
-  console.log(question);
+  // console.log(question);
   return (
     <div className="">
       {/* colum 1 */}
@@ -29,7 +29,10 @@ const QuestionTable = ({ question }) => {
 
                     <div className="">
                       <Link to={`/questionAnswer/${question._id}`}>
-                        <h2>{question.userName}</h2>
+                        <Link to={`/userProfile/${question.email}`}>
+                          {" "}
+                          <h2>{question.userName}</h2>
+                        </Link>
                         <div className="font-bold text-lg">
                           {question.title}
                         </div>

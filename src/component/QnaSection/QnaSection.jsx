@@ -41,76 +41,71 @@ const QnaSection = () => {
   const predefinedTags = ["html", "css", "tailwind"];
 
   return (
-    // <div className="hero min-h-screen bg-base-200">
-    //   <div className="hero-content flex-col lg:flex-row-reverse">
-    //     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-    //       <div className="card-body">
-    //         <form onSubmit={handleSubmit(onSubmit)}>
-    //           <div className="form-control">
-    //             <label className="label">
-    //               <span className="label-text">Title:</span>
-    //             </label>
-    //             <input
-    //               type="text"
-    //               id="title"
-    //               {...register("title")}
-    //               className="input input-bordered"
-    //             />
-    //           </div>
-    //           <div className="form-control">
-    //             <label className="label">
-    //               <span className="label-text">Body:</span>
-    //             </label>
-    //             <textarea
-    //               id="body"
-    //               {...register("body")}
-    //               className="input input-bordered"
-    //             />
-    //           </div>
+    <div className="hero min-h-screen bg-base-200">
+      <div className="hero-content flex-col lg:flex-row-reverse">
+        <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+          <div className="card-body">
+            <form onSubmit={handleSubmit(onSubmit)}>
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text">Title:</span>
+                </label>
+                <input
+                  type="text"
+                  id="title"
+                  {...register("title")}
+                  className="input input-bordered"
+                />
+              </div>
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text">Body:</span>
+                </label>
+                <textarea
+                  id="body"
+                  {...register("body")}
+                  className="input input-bordered"
+                />
+              </div>
 
-    //           <div className="form-control">
-    //             <label className="label">
-    //               <span className="label-text">Tags:</span>
-    //             </label>
-    //             <select
-    //               id="tags"
-    //               {...register("tags")}
-    //               className="input input-bordered"
-    //             >
-    //               {predefinedTags.map((tag) => (
-    //                 <option key={tag} value={tag}>
-    //                   {tag}
-    //                 </option>
-    //               ))}
-    //             </select>
-    //           </div>
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text">Tags:</span>
+                </label>
+                <select
+                  id="tags"
+                  {...register("tags")}
+                  className="input input-bordered"
+                >
+                  {predefinedTags.map((tag) => (
+                    <option key={tag} value={tag}>
+                      {tag}
+                    </option>
+                  ))}
+                </select>
+              </div>
 
-    //           <div className="form-control">
-    //             <label className="label">
-    //               <span className="label-text">Date:</span>
-    //             </label>
-    //             <input
-    //               type="date"
-    //               id="date"
-    //               {...register("date")}
-    //               className="input input-bordered"
-    //             />
-    //           </div>
-    //           <div className="form-control mt-6">
-    //             <button type="submit" className="btn btn-primary">
-    //               Submit
-    //             </button>
-    //           </div>
-    //         </form>
-    //       </div>
-    //     </div>
-    //   </div>
-    // </div>
-    <>
-      <div className="qna-bg">
-
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text">Date:</span>
+                </label>
+                <input
+                  type="date"
+                  id="date"
+                  {...register("date")}
+                  className="input input-bordered"
+                />
+              </div>
+              <div className="form-control mt-6">
+                <button type="submit" className="btn btn-primary">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
-    </>
+    </div>
   );
 };
 

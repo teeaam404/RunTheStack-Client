@@ -83,6 +83,10 @@ export const router = createBrowserRouter([
         path: "courseDetails/:id",
         element: <CourseDetails />,
       },
+      {
+        path: "userProfile/:email",
+        element: <UserProfile></UserProfile>,
+      },
     ],
   },
   {
@@ -93,10 +97,6 @@ export const router = createBrowserRouter([
       </PrivateRoute>
     ),
     children: [
-      {
-        path: "profile",
-        element: <UserProfile></UserProfile>,
-      },
       {
         path: "admin",
         element: <AdminProfile></AdminProfile>,

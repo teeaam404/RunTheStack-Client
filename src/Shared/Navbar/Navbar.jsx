@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import Theme from "../../component/Theme/Theme";
@@ -7,7 +7,8 @@ import profile from "../../assets/placeholder.jpg";
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
-  
+  console.log(user);
+
   return (
     <div className="navbar common-bg">
       <div className="navbar-start lg:hidden">
