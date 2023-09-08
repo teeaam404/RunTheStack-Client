@@ -24,7 +24,11 @@ import Python from "../Pages/Group/Python/Python";
 import Redux from "../Pages/Group/Redux/Redux";
 
 export const router = createBrowserRouter([
-    {
+  {
+    path: "/",
+    element: <Main></Main>,
+    children: [
+      {
         path: "/",
         element: <Main></Main>,
         children: [
@@ -124,6 +128,84 @@ export const router = createBrowserRouter([
             },
         ],
     },
+        element: <Home />,
+      },
+      {
+        path: "/courses",
+        element: <Courses />,
+      },
+      {
+        path: "/theme",
+        element: <Theme />,
+      },
+      {
+        path: "/community",
+        element: <Community></Community>,
+      },
+      {
+        path: "/community/group/:id",
+        element: <JoinGroup></JoinGroup>,
+      },
+      {
+        path: "/qna",
+        element: (
+          <PrivateRoute>
+            <QnaSection />
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "login",
+        element: <Login />,
+      },
+      {
+        path: "registration",
+        element: <Registration></Registration>,
+      },
+      {
+        path: "about",
+        element: <About></About>,
+      },
+      {
+        path: "questions",
+        element: <Question></Question>,
+      },
+      {
+        path: "/questionAnswer/:id",
+        element: <QuestionAnswer />,
+      },
+      {
+        path: "/payment",
+        element: (
+          <PrivateRoute>
+            <Payment />
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "courseDetails/:id",
+        element: <CourseDetails />,
+      },
+    ],
+  },
+  {
+    path: "dashboard",
+    element: (
+      <PrivateRoute>
+        <Dashboard></Dashboard>
+      </PrivateRoute>
+    ),
+    children: [
+      {
+        path: "profile",
+        element: <UserProfile></UserProfile>,
+      },
+      {
+        path: "admin",
+        element: <AdminProfile></AdminProfile>,
+      },
+    ],
+  },
 ]);
 
 export default router;
