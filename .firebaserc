@@ -1,8 +1,5 @@
 {
   "projects": {
-    "development": "run-the-stack",
     "default": "run-the-stack"
-  },
-  "targets": {},
-  "etags": {}
+  }
 }
